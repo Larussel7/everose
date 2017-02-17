@@ -1,0 +1,26 @@
+<% if @product.errors.any? %>
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+      <% @product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      <br/>
+<% end %>
+
+<table summary="Page form fields">
+  <tr>
+    <th>Название</th>
+    <td><%= f.text_field(:rus_title) %></td>
+  </tr>
+  <tr>
+    <th>Описание</th>
+    <td><%= f.text_field(:description) %></td>
+  </tr>
+  <tr>
+    <th>Цена</th>
+    <td><%= f.text_field(:price) %></td>
+  </tr>
+  <tr>
+    <th>Ссылка на картинку</th>
+    <td><%= f.text_field(:image_url) %></td>
+  </tr>
+</table>

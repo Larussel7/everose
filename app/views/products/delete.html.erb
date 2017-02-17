@@ -1,0 +1,17 @@
+<%= link_to("<< Вернуться к списку", products_path, :class => 'back-link') %>
+
+<div class="products delete">
+  <h2>Удаление товара</h2>
+
+  <%= form_for(@product, :method => 'delete') do |f| %>
+
+    <p>Вы уверены что хотите удалить этот товар?</p>
+
+    <p class="reference-name"><%= f.object.title %></p>
+
+    <div class="form-buttons">
+      <%= f.submit("Удалить Букет") %>
+    </div>
+
+  <% end %>
+</div>

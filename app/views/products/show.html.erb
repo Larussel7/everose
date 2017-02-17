@@ -1,0 +1,29 @@
+<%= link_to("<< Вернуться к списку", products_path, :class => 'back-link') %>
+
+<div class="products show">
+  <h2>Показать товар</h2>
+
+  <table summary="Product detail view">
+    <tr>
+      <th>Название</th>
+      <td><%= @product.rus_title %></td>
+    </tr>
+    <tr>
+      <th>Описание</th>
+      <td><%= @product.description %></td>
+    </tr>
+    <tr>
+      <th>Цена</th>
+      <td><%= @product.price %></td>
+    </tr>
+    <tr>
+      <th>Добавлен</th>
+      <td><%= @product.created_at %></td>
+    </tr>
+    <tr>
+      <th>Обнавлен</th>
+      <td><%= @product.updated_at %></td>
+    </tr>
+  </table>
+
+</div>

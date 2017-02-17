@@ -1,0 +1,15 @@
+<%= link_to("<< Вернуться к списку", products_path, :class => 'back-link') %>
+
+<div class="products new">
+  <h2>Добавить товар</h2>
+
+  <%= form_for(@product) do |f| %>
+
+    <%= render(:partial => 'form', :locals => {:f => f}) %>
+
+    <div class="form-buttons">
+      <%= f.submit("Добавить товар") %>
+    </div>
+
+  <% end %>
+</div>
