@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: everose_production
-  username: everose
-  password: <%= ENV['EVEROSE_DATABASE_PASSWORD'] %>
+  database: dcsubdasgta3kd
+  username: cvocjfldycnnjf
+  password: <%= ENV['3331f45209b46e19978c015a0ecef8f91727a054032f2dc370523492ea02dd14'] %>
