@@ -1,0 +1,15 @@
+
+<tr class="table_product_row">
+  <td class="table_product_img">
+    <%= image_tag(line_item.product.image_url_cart, :class => "table_icon", :width => "30") %>
+  </td>
+  <td class="table_product_name">
+    <%= line_item.product.rus_title %>
+  </td>
+  <td class="table_product_price">
+    <%= line_item.quantity %>&times;
+  </td>
+  <td class="table_product_price">
+    <%= line_item.product.price %>р
+  </td>
+</tr>
