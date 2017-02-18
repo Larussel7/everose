@@ -4,8 +4,8 @@
     <data-source name="Rails everose: production" uuid="2f58d25a-2714-45ce-9a32-5042fcb40a1c">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <first-sync>true</first-sync>
-      <user-name>antonputra</user-name>
-      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfefdffcdfefdff8dfe5dff9dfefdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <user-name>cvocjfldycnnjf</user-name>
+      <user-password>df99df99df99df9bdfccdf9edf9fdf98df9adf93dfc8df9edf9cdfcfdf9bdf93df93df9ddf92dfc9df9adf9bdf9fdfcbdf9adfcfdfc9dfcfdfccdf92dfccdf93df9bdf9ddf98df9ddfcbdf9adf9fdf9edf9adf99df98dfccdf98dfcedfc9df99df9ddf9adf9fdf98df99df9edf93df98dfcfdfcbdf9adf98dfcedfcedf9bdf9e</user-password>
     </data-source>
     <data-source name="Rails everose: development" uuid="0a93e677-1257-480a-869f-ed587b5390cf">
       <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">

@@ -1,0 +1,193 @@
+
+    <% content_for :title, "Корзина" %>
+
+
+
+
+    <div class="these-are-not-the-divs-youre-looking-for3">
+      <div class="container content">
+        <div class="four columns logo">
+          <%= link_to image_tag("bloomthat-primary-logo.png", :alt => 'Логотип'), {:controller => :welcome, :action => 'index'} %>
+        </div>
+        <div class="twelve columns nav right-fly">
+          <ul class="main menu">
+            <li>
+          <%= link_to('Наши цветы', {:controller => 'store',:action => 'index'}) %>
+            </li>
+            <li>
+                <%= link_to('Как мы работаем', {:controller => :welcome, :action => 'how'}) %>
+            </li>
+            <li>
+              <%= link_to('Наша история', {:controller => :welcome, :action => 'story'}) %>
+            </li>
+            <li>
+              <%= link_to('Контакты', {:controller => :welcome, :action => 'contact'}) %>
+            </li>
+          </ul>
+
+          <ul class="nav_buttons menu">
+            <li class="navicon_button">
+               <%= link_to 'Наши цветы', :controller => :store, :action => :index %>
+            </li>
+            <li>
+            <% ses1 = session[:cart_id] %>
+              <%= link_to('Корзина', {:controller => :carts, :action => ses1}, :class => 'cart') %>
+            </li>
+          </ul>
+
+        </div>
+        <div class="sixteen columns">
+          <div class="section clearfix"></div>
+           <div class="toggle_menu nav">
+            <ul class="mobile_menu">
+              <li>
+                <%= link_to 'Наши цветы', :controller => :store, :action => :index %>
+              </li>
+              <li>
+                <%= link_to('Как мы работаем', {:controller => :welcome, :action => 'how'}) %>
+              </li>
+              <li>
+                <%= link_to('Наша история', {:controller => :welcome, :action => 'story'}) %>
+              </li>
+              <li>
+               <%= link_to('Контакты', {:controller => :welcome, :action => 'contact'}) %>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sixteen columns">
+          <hr>
+        </div>
+      </div>
+      <div class="container main content">
+
+        <div class="sixteen columns clearfix collection_nav">
+          <h1 class="collection_title">
+            Корзина
+          </h1>
+
+
+
+
+
+
+
+
+            <% if notice %>
+      <p class="text-success"><%= notice %></p>
+      <% end %>
+
+        </div>
+        <div class="sixteen columns">
+          <div class="clearfix breadcrumb"></div>
+        </div>
+
+          <div class="checkout_table_header">
+            <div class="eight columns eight-mobile">
+              <h4>
+                Ваша корзина пуста!
+
+              </h4>
+            </div>
+            <div class="three columns hide-mobile">
+
+            </div>
+            <div class="two columns two-mobile">
+
+            </div>
+            <div class="three columns three-mobile">
+
+            </div>
+            <div class="clear"></div>
+          </div>
+
+
+
+
+
+
+          <ul class="none">
+            <li>
+              <div class="eight columns eight-mobile">
+
+
+                <p class="cart_price hide-mobile">
+                  $610 <span class="price_total_text">x</span>
+                </p>
+
+              </div>
+              <div class="three columns three-mobile">
+                           </div>
+              <div class="two columns two-mobile" id="quantity_1">
+
+              </div>
+              <div class="three columns three-mobile mobile_right">
+                <ul class="icons right cart_icons">
+
+                </ul><span class="price_total"></span>
+              </div>
+              <div class="sixteen columns clearfix">
+                <hr>
+              </div>
+            </li>
+          </ul>
+
+
+
+
+
+
+
+
+          <div class="ten columns align_right checkout-total">
+
+          </div>
+          <div class="two columns checkout-total-amount">
+            <p class="subtotal_amount">
+              <strong></strong><br>
+
+            </p>
+
+          </div>
+          <div class="three columns check-butt">
+
+          </div>
+
+      </div>
+      <div class="extra-space"></div>
+    </div>
+
+    <div id="footermy">
+
+    <div class="footer site-footer">
+      <div class="container foot-holder">
+        <div class="seven columns pad-crush">
+          <p>
+            &copy; Все права защищены! 2015
+          </p>
+          <hr class="footer-surf">
+
+        </div><%= image_tag "bloomthat-secondary-logo.png", :class => 'footimg', :alt => 'Мой рисунок'%>
+        <div class="seven columns right-fly">
+           <ul class="footer_menu">
+            <li>
+
+            <%= link_to('FAQ', {:controller => :welcome, :action => 'faq'}) %>
+
+            </li>
+
+          <li class="last-child">
+
+
+              <%= link_to('Способ оплаты', {:controller => :welcome, :action => 'terms'}) %>
+
+            </li>
+
+          </ul>
+          <hr class="footer-surf">
+
+        </div>
+      </div>
+    </div>
+
+</div>
