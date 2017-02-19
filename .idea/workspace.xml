@@ -71,8 +71,8 @@
       <file leaf-file-name="buket.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/store/buket.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="575">
+              <caret line="95" column="98" lean-forward="false" selection-start-line="95" selection-start-column="98" selection-end-line="95" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -81,8 +81,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/store/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1535">
-              <caret line="297" column="28" lean-forward="false" selection-start-line="297" selection-start-column="23" selection-end-line="297" selection-end-column="28" />
+            <state relative-caret-position="305">
+              <caret line="304" column="41" lean-forward="false" selection-start-line="304" selection-start-column="34" selection-end-line="304" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -109,6 +109,7 @@
       <find>odal-bg-2a1100px.jpg</find>
       <find>@product3</find>
       <find>@prod</find>
+      <find>link_to</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -470,7 +471,7 @@
       <workItem from="1487390840200" duration="3548000" />
       <workItem from="1487450539800" duration="2312000" />
       <workItem from="1487471994554" duration="13347000" />
-      <workItem from="1487519589821" duration="624000" />
+      <workItem from="1487519589821" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -556,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487519925549</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixed link buket">
+      <created>1487520306091</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1487520306091</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27569000" />
+    <option name="totallyTimeSpent" value="27685000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -965,16 +973,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/store/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1535">
-          <caret line="297" column="28" lean-forward="false" selection-start-line="297" selection-start-column="23" selection-end-line="297" selection-end-column="28" />
+        <state relative-caret-position="305">
+          <caret line="304" column="41" lean-forward="false" selection-start-line="304" selection-start-column="34" selection-end-line="304" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/store/buket.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="575">
+          <caret line="95" column="98" lean-forward="false" selection-start-line="95" selection-start-column="98" selection-end-line="95" selection-end-column="98" />
           <folding />
         </state>
       </provider>
