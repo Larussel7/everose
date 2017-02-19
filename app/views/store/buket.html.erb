@@ -26,7 +26,13 @@
           <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
           <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
           <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
-          <% ses1 = session[:cart_id] %>
+
+
+          <% if session[:cart_id] != nil %>
+              <% ses1 = session[:cart_id] %>
+          <% else %>
+              <% ses1 = 1 %>
+          <% end %>
 
           <li class="sign-in-button"> <%= link_to 'Кор', cart_path(ses1), :class => 'cart' %> </li>
           <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://www.#.com/login">Войти</a> </li>
