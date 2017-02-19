@@ -1,0 +1,691 @@
+<% content_for :title, "Доставка цветов - OtpravBuket" %>
+
+
+<div class="these-are-not-the-divs-youre-looking-for">
+  <div id="fixed-header" class="container content header">
+    <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
+      <ul class="bt-notification-list">
+        <li id="link-coupon-message"></li>
+      </ul>
+    </div>
+    <div class="container" id="header-contain">
+      <div class="four columns logo">
+        <%= link_to image_tag("logo.png", :alt => 'Добавить', :title => 'BloomThat'), root_path %>
+      </div>
+      <div class="eight columns header-col menu-col" id="desktop-header-menu">
+        <ul class="master_footer lead-menu">
+
+          <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
+
+          <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
+          <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
+          <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://#/login">Войти</a> </li>
+        </ul>
+      </div>
+      <div id="desktop-header-gate"></div>
+    </div>
+  </div>
+  <div style="display:none;" itemprop="brand" itemscope="" itemtype="http://schema.org/Organization"> <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="email">info@bloomthat.com</span> <span style="display:none;" itemprop="foundingLocation">San Francisco, CA</span>
+    <div itemprop="brand" itemscope="" itemtype="http://schema.org/Brand"> <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="logo">https://fdn.bloomthat.com/icons/2014/11/apple-touch-icon-precomposed.png</span> </div>
+  </div>
+  <div id="fixed-body">
+    <div id="home-banner">
+      <div class="just-an-image-nothing-to-see-here"> <img class="bloomthat-really-big-cheese" src="<%=asset_path 'newhomepageimg.jpg' %>" alt="BloomThat Flower Delivery" title="BloomThat Flower Delivery"> </div>
+      <div id="top-shop">
+        <h1 class="hero-call" id="top-shop-call"> ОТПРАВЛЯЙ <strong>С НАМИ</strong> </h1>
+        <div class="row" id="home-gate-gap">
+          <div class="hero-address-gate">
+            <div class="gate-form-holder">
+
+              <%= form_tag(store_path(1), method: "get") do %>
+                  <input type="hidden" name="return_uri" value="">
+                  <div class="hero-input-box">
+                    <input maxlength="60" id="input_city" class="bloom-input-100 monster-lite-form" type="text" placeholder="Введите ваш адрес" name="address" value="" id="home-page-gate-address" required="" autocomplete="off">
+                    <input name="zipcode" id="home-page-gate-address-zipcode" type="hidden">
+                    <div class="pac-container pac-logo" style="width: 398px; position: absolute; display:none;" id="home-page-gate-address-results"></div>
+                  </div>
+                  <div class="hero-button-box">
+
+
+                    <%= button_to "", { class: "hero-shop-button mp-gate_city_search_attempted", id: "home-page-gate-address-submit", style: "background-color:#ff6600"} do %>
+                        <span>ПОКАЖИ МНЕ БУКЕТЫ!</span>
+                    <% end %>
+
+                  </div>
+              <% end %>
+            </div>
+          </div>
+          <div class="section nation-wide-banner-home">
+            <p class=""> <strong>У НАС САМЫЕ СВЕЖИЕ ЦВЕТЫ С ДОСТАВКОЙ</strong> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="sixteen columns hide-tab">
+
+      <div id="collection-grid" class="slider">
+
+        <div data-reactroot="" id="products" class="slick-initialized slick-slider">
+
+
+          <div class="your-class">
+            <% cache ['store', Product.latest] do %>
+                <% @products.each do |product| %>
+                    <% cache ['entry', product] do %>
+
+
+
+                        <div class="product slick-slide slick-active" data-slick-index=<%= product.id %> aria-hidden="false" style="width: 375px;">
+                          <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+                          <div class="product-info">
+                            <div class="info-top">
+                              <div class="title">
+                                <span><%= product.rus_title %></span><b> · <span> <%= number_to_currency(product.price) %></span></b>
+                              </div>
+                            </div>
+                            <div class="info-bottom">
+                              <%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                            </div>
+
+
+                          </div>
+                          <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
+                            <div itemprop="brand" itemscope="" itemtype="http://schema.org/Organization" style="display: none;"><span itemprop="name" style="display: none;">BloomThat</span><span itemprop="email" style="display: none;">info@bloomthat.com</span><span itemprop="foundingLocation" style="display: none;">San Francisco, CA</span>
+                              <div itemprop="brand" itemscope="" itemtype="http://schema.org/Brand"><span itemprop="name" style="display: none;">BloomThat</span><span itemprop="logo" style="display: none;">http://fdn.bloomthat.dev/icons/2014/11/apple-touch-icon-precomposed.png</span>
+                              </div>
+                            </div><span itemprop="url" style="display: none;">the-beso</span><span itemprop="name" style="display: none;">The Beso</span><span itemprop="description" style="display: none;"></span><span itemprop="image" style="display: none;">https://fdn.bloomthat.com/files/products/the-beso/full/1478198693/the-beso-full-bloomthat-besos-large.jpg</span>
+                            <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" style="display: none;"><span itemprop="price" style="display: none;">46.00</span><span itemprop="priceCurrency" style="display: none;">USD</span><span itemprop="availability" style="display: none;">In Stock</span>
+                            </div>
+                          </div>
+                        </div>
+                    <% end %>
+                <% end %>
+            <% end %>
+          </div>
+
+
+
+        </div>
+      </div>
+      <%= link_to 'Все букеты', {:controller => :store, :action => :index}, {class: "button hero-shop-button", id: "shop-full"} %>
+    </div>
+    <div class="hide-tab">
+      <hr> </div>
+    <div class="row email-submit-box mp-email_register_clicked" id="email-signup-link">
+      <a class="email-submit-link"></a>
+      <h3 class="email-submit"> <a class="email-submit-link"><strong>Кликни и получай букеты в свой ящик</strong></a> </h3>
+      <a class="email-submit-link"></a>
+    </div>
+    <div class="hide-tab">
+      <div class="content container">
+        <div class="row">
+          <div class="sixteen columns">
+            <h2 style="text-align: center; font-size: 39px; font-weight: 300; margin-top: 40px; margin-bottom: 25px;"> Где мы доставляем </h2>
+            <hr class="short-hr" style="padding: 10px 0 10px 0;">
+            <p style="text-align: center; font-size: 14pt;"> Доставляем по всему Челябинску!
+              <br> Доставляем в течении дня по всему городу с беспланой доставкой! </p>
+            <div style="position: relative;"> <img style="max-width: 100%;" src="<%=asset_path 'MAP-compressed.jpg' %>"> </div>
+          </div>
+          <div style="display: none;" id="show-location-los-angeles">
+            <h2 style="text-align: center; font-weight: 300; font-size: 24px;"> Same-Day Delivery </h2>
+            <div style="padding: 0 10px;"> <img style="max-width: 100%;" src="#"> </div>
+            <h3 style="text-align: center; font-weight: 200; letter-spacing: 1px; text-transform: uppercase; font-size: 17px;"> Los Angeles, California </h3>
+            <p style="text-align: center; text-transform: uppercase;"> Delivery available
+              <br> from Venice to Los Feliz </p>
+          </div>
+          <div style="display: none;" id="show-location-bay-area">
+            <h2 style="text-align: center; font-weight: 300; font-size: 24px;"> Same-Day Delivery </h2>
+            <div style="padding: 0 10px;"> <img style="max-width: 100%;" src="#"> </div>
+            <h3 style="text-align: center; font-weight: 200; letter-spacing: 1px; text-transform: uppercase; font-size: 17px;"> Bay Area, California </h3>
+            <p style="text-align: center; text-transform: uppercase;"> Delivery available
+              <br> from San Francisco to San Jose </p>
+          </div>
+          <div style="display: none;" id="show-location-new-york">
+            <h2 style="text-align: center; font-weight: 300; font-size: 24px;"> Same-Day Delivery </h2>
+            <div style="padding: 0 10px;"> <img style="max-width: 100%;" src="#"> </div>
+            <h3 style="text-align: center; font-weight: 200; letter-spacing: 1px; text-transform: uppercase; font-size: 17px;"> New York, New York </h3>
+            <p style="text-align: center; text-transform: uppercase;"> Delivery available in Manhattan
+              <br> and parts of Brooklyn </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hide-tab">
+      <hr> </div>
+    <div class="container content howit hide-tab">
+      <div class="five columns">
+        <div class="ios-holder"> <img alt="BloomThat Flower Delivery App" class="iphone-base" width="250" src="<%=asset_path 'bloomthat-iphone-6p.jpg' %>" style="z-index:110;"> </div>
+      </div>
+      <div class="eleven columns homework-desc" id="ios-screen-preview">
+        <h2 class="sect-title"> Как это работает </h2>
+        <div class="description-box">
+          <div class="row margin-crusher">
+            <div class="two columns right-margin-kill" style="width:auto;"> <img alt="BloomThat Flower Delivery App Step" class="hiw-image" src="<%=asset_path 'bloomthat-click-it.png' %>"> </div>
+            <div class="eight columns">
+              <h4 class="sub-four how-steps" id="hiw-header-1"> Выбери букет </h4>
+              <h4 class="desc-bullet"> У нас есть меню с букетами </h4> </div>
+          </div>
+          <div class="row margin-crusher">
+            <div class="little-line"></div>
+          </div>
+          <div class="row margin-crusher">
+            <div class="two columns right-margin-kill" style="width:auto;"> <img alt="BloomThat Flower Delivery App Step" class="hiw-image" id="hiw-image-2-disabled" src="<%=asset_path 'bloomthat-space-time.png' %>"> </div>
+            <div class="eight columns">
+              <h4 class="sub-four how-steps" id="hiw-header-2"> Скажи когда &amp; куда </h4>
+              <h4 class="desc-bullet"> Доставляем в тот же день </h4> </div>
+          </div>
+          <div class="row margin-crusher">
+            <div class="little-line"></div>
+          </div>
+          <div class="row margin-crusher">
+            <div class="two columns right-margin-kill" style="width:auto;"> <img alt="BloomThat Flower Delivery App Step" class="hiw-image" id="hiw-image-3-disabled" src="<%=asset_path 'bloomthat-kickin-it.png' %>"> </div>
+            <div class="eight columns desc-box">
+              <h4 class="sub-four how-steps" id="hiw-header-3"> Сядьте на стул и раслабьтесь </h4>
+              <h4 class="desc-bullet"> Все... мы сделаем всю остальную работу </h4> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hide-tab">
+      <hr> </div>
+    <div class="container content download-now hide-tab">
+      <div class="four columns download-button">
+        <a href="https://itunes.apple.com/us/app/bloomthat/id806330315?mt=8&amp;uo=4" target="itunes_store"></a>
+        <button type="button" class="app_button" name="action_call">
+          <a href="https://itunes.apple.com/us/app/bloomthat/id806330315?mt=8&amp;uo=4" target="itunes_store"></a>
+          <a href="https://itunes.apple.com/us/app/bloomthat/id806330315?mt=8&amp;uo=4" target="itunes_store"></a>
+          <a href="https://itunes.apple.com/us/app/bloomthat/id806330315?mt=8&amp;uo=4" target="itunes_store"></a><a style="color:white;" href="https://" target="itunes_store">загрузи приложение</a>
+        </button>
+      </div>
+      <div class="ten columns download-call">
+        <h2 class="app-call"> <strong>Загрузи</strong> и начинай рассылать букеты</h2> </div>
+    </div>
+    <div class="hide-tab">
+    </div>
+
+    <div class="coverage hideme">
+      <div class="container content">
+        <div class="row">
+          <div class="sixteen columns" id="service_area">
+            <h2 class="sect-title" style="text-align:center;"> Доставляем свежие букеты в этих регионах </h2>
+            <ul class="ter-master">
+
+              <li class="city"> <%= link_to 'Челябинск', {:controller => :store, :action => :index}, {id: "city-eastbay"} %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content hide-desk-show-mobile home-collection">
+      <div class="sixteen columns workit">
+        <div class="main content">
+          <div class="container main content" id="flower-collection">
+            <div class="mobile-temp-gate">
+              <div class="section">
+                <div class="product_row" style="text-align:center;">
+                  <div class="delivery-select">
+                    <div class="collection-location btm-bord" id="delivery-select-loc">
+                      <div class="icon-block"> <i class="fa fa-map-marker" id="map-hov"></i> </div>
+                      <div class="info-display-block rt-bord">
+                        <h4 class="pick_header lfte"> Куда </h4>
+                        <h4 class="sub-four lfte"> <strong>Челябинск</strong> &nbsp;<i class="fa fa-chevron-down"></i> </h4> </div>
+                    </div>
+                    <div class="collection-time" id="delivery-select-time">
+                      <div class="icon-block"> <i class="fa fa-clock-o" id="clock-hov"></i> </div>
+                      <div class="info-display-block">
+                        <h4 class="pick_header lfte"> Когда </h4>
+                        <h4 class="sub-four lfte"> <strong>Сегодня</strong> &nbsp;<i class="fa fa-chevron-down"></i> </h4> </div>
+                    </div>
+                    <div class="delivery-location-section" style="display:none;">
+                      <h4 class="arrow-text"> Enter a city name or postal code </h4>
+                      <div class="hero-address-gate-a">
+                        <div class="container modal-wrap-container">
+                          <div class="row modal-wrap-row">
+                            <form action="https://#/locations/set_zip_code" accept-charset="utf-8" class="contact_form auto-submit" id="location-search-form" method="get">
+                              <div class="modal-input-kicker">
+                                <input class="bloom-input-100" type="text" placeholder="Enter your zip code" name="zipcode" id="location-search" autocomplete="off">
+                                <div class="pac-container pac-logo" style="width: 398px; position: absolute; display:none;z-index:999;" id="location-search-results"></div>
+                              </div>
+                              <div class="modal-button-kicker">
+                                <button type="button" id="location-search-submit"><span>GO</span>
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                          <hr class="loc_hr" id="mob_out"> </div>
+                      </div>
+                      <div class="mob_out-box">
+                        <h4 class="arrow-text" style="margin-top:10px;"> or choose from some of our most popular areas </h4>
+                        <div class="container modal-wrap-container">
+                          <div class="row modal-wrap-row" style="margin-bottom:10px;">
+                            <form action="https://#/cart/search_address" method="post" accept-charset="utf-8" class="contact_form auto-submit" id="footer-buttons">
+                              <ul class="location_picker">
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="94107">San Francisco</button>
+                                </li>
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="94301">Palo Alto</button>
+                                </li>
+                              </ul>
+                              <ul class="location_picker">
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="90071">Los Angeles</button>
+                                </li>
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="90401">Santa Monica</button>
+                                </li>
+                              </ul>
+                              <ul class="location_picker">
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="95113">San Jose</button>
+                                </li>
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="95014">Cupertino</button>
+                                </li>
+                              </ul>
+                              <ul class="location_picker">
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="94607">Oakland</button>
+                                </li>
+                                <li>
+                                  <button type="submit" class="loc_picker_button" name="address" value="94720">Berkeley</button>
+                                </li>
+                              </ul>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="delivery-time-section" style="display:none;">
+                      <h4 class="arrow-text"> Choose a delivery date to see available blooms </h4>
+                      <div class="container modal-wrap-container">
+                        <div class="row modal-wrap-row">
+                          <form action="https://#/locations/set_date" accept-charset="utf-8" id="date-picker-form" method="get">
+                            <input type="hidden" name="date" value="" id="date-picker-value">
+                            <div id="loc_spot">
+                              <ul class="dtpicker">
+                                <li class="dtbox dt_date selected" data-date="2016-11-25">
+                                  <h3 class="pick_top"> Today </h3>
+                                  <h4 class="pick_header"> Nov 25th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-11-26">
+                                  <h3 class="pick_top"> Tomorrow </h3>
+                                  <h4 class="pick_header"> Nov 26th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-11-27">
+                                  <h3 class="pick_top"> Sunday </h3>
+                                  <h4 class="pick_header"> Nov 27th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-11-28">
+                                  <h3 class="pick_top"> Monday </h3>
+                                  <h4 class="pick_header"> Nov 28th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-11-29">
+                                  <h3 class="pick_top"> Tuesday </h3>
+                                  <h4 class="pick_header"> Nov 29th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-11-30">
+                                  <h3 class="pick_top"> Wednesday </h3>
+                                  <h4 class="pick_header"> Nov 30th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-01">
+                                  <h3 class="pick_top"> Thursday </h3>
+                                  <h4 class="pick_header"> Dec 1st </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-02">
+                                  <h3 class="pick_top"> Friday </h3>
+                                  <h4 class="pick_header"> Dec 2nd </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-03">
+                                  <h3 class="pick_top"> Saturday </h3>
+                                  <h4 class="pick_header"> Dec 3rd </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-04">
+                                  <h3 class="pick_top"> Sunday </h3>
+                                  <h4 class="pick_header"> Dec 4th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-05">
+                                  <h3 class="pick_top"> Monday </h3>
+                                  <h4 class="pick_header"> Dec 5th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-06">
+                                  <h3 class="pick_top"> Tuesday </h3>
+                                  <h4 class="pick_header"> Dec 6th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-07">
+                                  <h3 class="pick_top"> Wednesday </h3>
+                                  <h4 class="pick_header"> Dec 7th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-08">
+                                  <h3 class="pick_top"> Thursday </h3>
+                                  <h4 class="pick_header"> Dec 8th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-09">
+                                  <h3 class="pick_top"> Friday </h3>
+                                  <h4 class="pick_header"> Dec 9th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-10">
+                                  <h3 class="pick_top"> Saturday </h3>
+                                  <h4 class="pick_header"> Dec 10th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-11">
+                                  <h3 class="pick_top"> Sunday </h3>
+                                  <h4 class="pick_header"> Dec 11th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-12">
+                                  <h3 class="pick_top"> Monday </h3>
+                                  <h4 class="pick_header"> Dec 12th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-13">
+                                  <h3 class="pick_top"> Tuesday </h3>
+                                  <h4 class="pick_header"> Dec 13th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-14">
+                                  <h3 class="pick_top"> Wednesday </h3>
+                                  <h4 class="pick_header"> Dec 14th </h4> </li>
+                                <li class="dtbox dt_date" data-date="2016-12-15">
+                                  <h3 class="pick_top"> Thursday </h3>
+                                  <h4 class="pick_header"> Dec 15th </h4> </li>
+                              </ul>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-wrapper">
+              <div data-reactroot="" id="collection-grid">
+                <div id="products">
+                  <section>
+                    <header class="section-header">
+                      <div>
+                        <hr class="header-line"><b>Популярные</b>
+                      </div>
+                      <!-- react-text: 8 -->Несколько самых свежих и популярных букетов!
+                      <!-- /react-text -->
+                    </header>
+                    <div>
+
+
+
+
+
+
+                      <% @products.each do |product| %>
+
+
+                          <div class="product">
+
+                            <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+
+
+                            <div class="product-info">
+                              <div class="info-top">
+                                <div class="title"><span><%= product.rus_title %></span><b> · <span> <%= number_to_currency(product.price) %></span></b>
+                                </div>
+                                <p class="when-deliv">available Tomorrow, 11AM-1PM</p>
+                              </div>
+                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                              </div>
+                            </div>
+                            <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
+                              <div itemprop="brand" itemscope="" itemtype="http://schema.org/Organization" style="display: none;"><span itemprop="name" style="display: none;">BloomThat</span><span itemprop="email" style="display: none;">info@bloomthat.com</span><span itemprop="foundingLocation" style="display: none;">San Francisco, CA</span>
+                                <div itemprop="brand" itemscope="" itemtype="http://schema.org/Brand"><span itemprop="name" style="display: none;">BloomThat</span><span itemprop="logo" style="display: none;">http://fdn.bloomthat.dev/icons/2014/11/apple-touch-icon-precomposed.png</span>
+                                </div>
+                              </div><span itemprop="url" style="display: none;">the-olivier</span><span itemprop="name" style="display: none;">The Olivier</span><span itemprop="description" style="display: none;"></span><span itemprop="image" style="display: none;">https://fdn.bloomthat.com/files/products/the-olivier/full/1479773501/the-olivier-full-bloomthat-olivetree-large.jpg</span>
+                              <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" style="display: none;"><span itemprop="price" style="display: none;">50.00</span><span itemprop="priceCurrency" style="display: none;">USD</span><span itemprop="availability" style="display: none;">In Stock</span>
+                              </div>
+                            </div>
+                          </div>
+                      <% end %>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </section>
+                  <section>
+                    <header class="section-header">
+                      <div>
+                        <hr class="header-line"><b>Букеты</b>
+                      </div>
+                      <!-- react-text: 160 -->Сделаны своими руками. Идеальны по любым поводам.
+                      <!-- /react-text -->
+                    </header>
+                    <div>
+
+
+
+                      <% @products.each do |product| %>
+
+
+                          <div class="product">
+
+                            <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+
+
+                            <div class="product-info">
+                              <div class="info-top">
+                                <div class="title"><span><%= product.rus_title %></span><b> · <span> <%= number_to_currency(product.price) %></span></b>
+                                </div>
+                                <p class="when-deliv">available Tomorrow, 11AM-1PM</p>
+                              </div>
+                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                              </div>
+                            </div>
+                            <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
+                              <div itemprop="brand" itemscope="" itemtype="http://schema.org/Organization" style="display: none;"><span itemprop="name" style="display: none;">BloomThat</span><span itemprop="email" style="display: none;">info@bloomthat.com</span><span itemprop="foundingLocation" style="display: none;">San Francisco, CA</span>
+                                <div itemprop="brand" itemscope="" itemtype="http://schema.org/Brand"><span itemprop="name" style="display: none;">BloomThat</span><span itemprop="logo" style="display: none;">http://fdn.bloomthat.dev/icons/2014/11/apple-touch-icon-precomposed.png</span>
+                                </div>
+                              </div><span itemprop="url" style="display: none;">the-olivier</span><span itemprop="name" style="display: none;">The Olivier</span><span itemprop="description" style="display: none;"></span><span itemprop="image" style="display: none;">https://fdn.bloomthat.com/files/products/the-olivier/full/1479773501/the-olivier-full-bloomthat-olivetree-large.jpg</span>
+                              <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" style="display: none;"><span itemprop="price" style="display: none;">50.00</span><span itemprop="priceCurrency" style="display: none;">USD</span><span itemprop="availability" style="display: none;">In Stock</span>
+                              </div>
+                            </div>
+                          </div>
+                      <% end %>
+
+
+
+
+                    </div>
+                  </section>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section clearfix"> &nbsp; </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="fb-root"></div>
+<div class="arrow_box_email-capture modal" id="email-capture-modal" style="position: fixed; top: 45%; left: 50%; margin-top: -265px; margin-left: -328px; z-index: 11; display: none;" data-backdrop="static" data-keyboard="false">
+  <div class="bottom-layer">
+    <div class="modal-body"> <img class="modal-bg-img" src="#" alt="BloomThat Send Something" title="BloomThat Send Something">
+      <div id="before-jesus-a">
+        <div class="modal-over-body">
+          <h2 class="email-cap-head"> There's something<br> you should know. </h2> </div>
+        <div class="modal-over-body-cta">
+          <h3 class="email-cap-sub"> Sign up for our emails + find out. </h3>
+          <h4 class="email-cap-small"> (You'll also get <strong>$5 off</strong> your first order for signing up.) </h4> </div>
+        <div class="hero-address-gate">
+          <div class="gate-form-holder">
+            <div class="hero-input-box" id="email_collect-input">
+              <input class="bloom-input-100 monster-lite-form" type="email" name="user_name" placeholder="Enter Email Here" required="" id="email-collect-input-a"> </div>
+            <div class="hero-button-box">
+              <button type="button" class="action-pre_register hero-shop-button mp-email_register_attempted"><span>TELL ME!</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="after-jesus-a" style="display:none;">
+        <div class="modal-over-body-cta dones">
+          <h2 class="email-cap-head"> Here's $5 off<br> for signing up! </h2>
+          <h3 class="email-cap-sub big-jump"> Use code <strong>FIRSTBLOOMS</strong> at checkout </h3>
+          <h4 class="email-cap-small"> First time users only </h4> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="arrow_box_email-capture" id="email-capture-modal-b" style="display:none;" data-backdrop="static" data-keyboard="false">
+  <div class="bottom-layer">
+    <div class="modal-body"> <img class="modal-bg-img" src="#" alt="BloomThat Send Something" title="BloomThat Send Something">
+      <div id="before-jesus-b">
+        <div class="modal-over-body sign-head">
+          <h2 class="email-cap-head sign-two-head"> Welcome to<br> the Bloomcrew! </h2> </div>
+        <div class="modal-over-body-cta sign-sub">
+          <h3 class="email-cap-sub sign-two-sub"> Sign up and get </h3> </div>
+        <div class="hero-address-gate sign-two-email">
+          <div class="gate-form-holder">
+            <div class="hero-input-box sign-two-input-box" id="email_collect-input">
+              <input class="bloom-input-100 monster-lite-form" type="email" name="user_name" placeholder="Enter Your Email Here" required="" id="email-collect-input-b"> </div>
+            <div class="hero-button-box sign-two-button-box">
+              <button type="button" class="action-pre_register hero-shop-button mp-email_register_attempted"><span>GET THE CODE</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="after-jesus-b" style="display:none;">
+        <div class="modal-over-body-cta dones">
+          <div class="modal-over-body sign-head">
+            <h2 class="email-cap-head sign-two-head"> Nailed It. </h2> </div>
+          <div class="modal-over-body-cta sign-sub">
+            <h3 class="email-cap-sub sign-two-sub"> You Got </h3> </div>
+          <div class="modal-over-body-coupon">
+            <h3 class="email-cap-sub big-jumper"> Use code <strong>FIRSTBLOOMS</strong> at checkout </h3>
+            <h4 class="email-cap-small"> First time users only </h4> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="base">
+  <div class="container">
+    <div class="sixteen columns">
+      <div class="row"> <img alt="BloomThat Flower Delivery" style="width:75px;" src="<%=asset_path 'bloomthat-logo-mobile.png' %>"> </div>
+      <ul class="master_footer" id="swap-header-footer">
+        <li> <a href="https://#/locations" title="Locations">АДРЕС</a> </li>
+
+        <li> <a href="https://#/help-center" title="Help Center">Контакты</a> </li>
+      </ul>
+      <br>
+      <ul class="master_footer">
+        <li class="hidden-below"> <a href="https://#/locations" title="Locations">АДРЕС</a> </li>
+
+        <li class="hidden-below"> <a href="https://#/help-center" title="Help Center">Контакты</a> </li>
+        <li class="hidden-below"> <a href="https://#/terms" title="Privacy Policy and Terms of Use">Условия</a> </li>
+        <li class="hidden-below"> <a href="https://jobs.lever.co/bloomthat" title="Press">Нанимаем</a> </li>
+      </ul>
+      <h3> Давайте дружить </h3>
+      <div class="social-buttons">
+        <a target="_blank" href="https://www.instagram.com/" style="background-image: url(/instagram.png);" class="social-button"></a>
+        <a target="_blank" href="https://www.snapchat.com/add/" style="background-image: url(/snapchat.png);" class="social-button"></a>
+        <a target="_blank" href="https://www.facebook.com/" style="background-image: url(/facebook.png);" class="social-button"></a>
+        <a target="_blank" href="https://www.twitter.com/" style="background-image: url(twitter.png);" class="social-button"></a>
+      </div>
+      <p> © 2017 OtpravBuket </p>
+    </div>
+  </div>
+</div>
+<div class="arrow_box_zipper" style="display:none;" id="help-demand">
+  <div class="bottom-layer">
+    <div class="modal-body">
+      <div class="arrow_box_header_top">
+        <h3 class="arrow-header"> Bloom<strong>Tip</strong> </h3> </div>
+      <div class="container modal-wrap-container">
+        <div class="row modal-wrap-row">
+          <h4 class="arrow-text" style="margin-top:15px; margin-bottom:25px;"> <strong>ON-DEMAND BLOOMS</strong><br> The fastest flower delivery ever.<br> Available in the Bay Area<br> and downtown New York. </h4> </div>
+      </div>
+      <div class="container modal-wrap-container">
+        <div class="row modal-wrap-row">
+          <ul class="location_picker">
+            <li>
+              <button type="button" class="logout_btn" name="Close" id="on_demand_got-it">GOT IT!</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="arrow_box_zipper" style="display:none;" id="promo_code_enter">
+  <div class="bottom-layer">
+    <div class="modal-body">
+      <div class="arrow_box_header_top">
+        <h3 class="arrow-header"> Promo <strong>Code</strong> </h3> </div>
+      <h4 class="arrow-text"> Enter a promo or referral code </h4>
+      <div class="container modal-wrap-container">
+        <div class="row modal-wrap-row">
+          <form action="https://#/checkout/promo_save" method="post" accept-charset="utf-8" id="promo-save-form">
+            <div class="modal-input-kicker">
+              <input type="hidden" name="note_to" value="" id="promo-note-to">
+              <input type="hidden" name="note_from" value="" id="promo-note-from">
+              <input type="hidden" name="note_content" value="" id="promo-note-content">
+              <input type="text" name="promo_code" class="bloom-input-100 mp-value-discount_code_submission" placeholder="Promo Code"> </div>
+            <div class="modal-button-kicker">
+              <button type="submit" class="mp-add_promo_code_attempted" data-mp_button_text="Go"><span>GO</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="arrow_box_zipper" style="display:none;" id="not-there-yet">
+  <div class="bottom-layer">
+    <div class="modal-body">
+      <div class="arrow_box_header_top">
+        <h3 class="arrow-header"> We're not there yet! </h3> </div>
+      <div class="container modal-wrap-container">
+        <div class="row modal-wrap-row">
+          <h4 class="arrow-text" style="margin-top:30px; margin-bottom:30px;"> Sign up to be the first to know when we bloom your city. </h4> </div>
+      </div>
+      <div class="container modal-wrap-container">
+        <div class="row modal-wrap-row">
+          <ul class="location_picker">
+            <li>
+              <button type="button" class="logout_btn" name="Close" id="not-there-close" onclick="window.location.href=&#39;/login/sign-up&#39;;">SIGN UP!</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="arrow_box_desktop" id="footer-zip-request-modal" data-backdrop="static" data-keyboard="false" style="display:none;">
+  <div class="bottom-layer">
+    <div class="modal-body"> <img class="rose-chop" src="#" alt="BloomThat" title="BloomThat">
+      <div>
+        <h2 class="another-header"> <strong>Great</strong> Choice! </h2>
+        <h3 class="another-smaller-header"> Now all we need is the zip. </h3>
+        <div class="hero-address-gate">
+          <div class="gate-form-holder">
+            <form action="https://#/locations/set_zip_code" accept-charset="utf-8" id="footer-zip-request-form" method="get">
+              <input type="hidden" name="return_uri" value="">
+              <input type="hidden" name="numbers_only" value="1" id="numbers_only">
+              <div class="hero-input-box">
+                <input maxlength="8" class="bloom-input-100 monster-lite-form" type="number" placeholder="Enter your delivery zip code" name="address" value="" id="footer-zip-request" required="" autocomplete="off">
+                <input name="zipcode" id="footer-zip-request-zipcode" type="hidden">
+                <div class="pac-container pac-logo" style="width: 398px; position: absolute; display:none;" id="footer-zip-request-results"></div>
+              </div>
+              <div class="hero-button-box">
+                <button type="submit" class="hero-shop-button mp-gate_city_search_attempted" data-mp_button_text="Shop" data-mp_ui_element="hero-address-gate" id="footer-zip-request-submit" data-input_id="footer-zip-request" style="background-color:#ff6600"><span>SHOW ME THE BLOOMS!</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="_lo_fl_saver_div" style="position: absolute; overflow: hidden; z-index: 0; left: -100px; bottom: 1px;">
+
+</div>

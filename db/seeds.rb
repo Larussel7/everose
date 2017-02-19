@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Product.create(:rus_title => "Розы", :description => "Все про розы в клубе любителей дачи. Виды роз, сорта, тонкости выращивания и ухода, практические советы дачников.", :price => 1460, :image_url => "the-b-day-winner-collection_feature-winnie-bday-feature.jpg")
+Product.create(:rus_title => "Тюльпаны", :description => "Цветы тюльпаны – выращивание. Виды и сорта тюльпанов. Посадка тюльпанов в грунт – когда сажать тюльпаны: посадка тюльпанов.", :price => 2950, :image_url => "the-isabella-collection_feature-featured-image-isabelle.jpg")
+Product.create(:rus_title => "Ромашки", :description => "Ромашка аптечная помогает справиться с простудой, насморком, ангиной, сердечными заболеваниями, заболеваниями пищеварительной системы.", :price => 3100, :image_url => "the-noelle-collection_feature-bloomthat-noelle-feature.jpg")
+Product.create(:rus_title => "Петуньи", :description => "Что то рановато с петунией. Чтобы не падала не снимайте пленку, как только взошла (пленкой накрываете всходы после посева.", :price => 1460, :image_url => "the-merri-collection_feature-featured-image-merri.jpg")
+Product.create(:rus_title => "Одуванчики", :description => "Как уже известно, одуванчик лекарственный – растение целебное и очень полезное. От большого количества недугов и заболеваний уже давно.", :price => 990, :image_url => "the-winnie-collection_feature-bloomthat-winnie-alt-feature.jpg")
+Product.create(:rus_title => "подснежник", :description => "Подснежник лесной издавна является символом весны, чистоты, молодости и свежести, а также говорит о том, что нужно радоваться как настоящему.", :price => 6430, :image_url => "the-winter-warm-up-collection_feature-bloomthat-holly-premiumcandle-feature.jpg")

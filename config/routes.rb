@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
-  
+
+
   # TODO change root
-  root "products#index"
+  root "store#main"
+
+
+  resources :store, :except => [:show] do
+    member do
+      get 'buket'
+    end
+  end
 
   resources :line_items
   resources :carts
