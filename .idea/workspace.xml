@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="249bf546-2d12-4c60-902c-7b7efb762733" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/store/buket.html.erb" afterPath="$PROJECT_DIR$/app/views/store/buket.html.erb" />
     </list>
@@ -77,8 +71,8 @@
       <file leaf-file-name="buket.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/store/buket.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="95" column="90" lean-forward="false" selection-start-line="95" selection-start-column="90" selection-end-line="95" selection-end-column="90" />
+            <state relative-caret-position="515">
+              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -476,7 +470,7 @@
       <workItem from="1487390840200" duration="3548000" />
       <workItem from="1487450539800" duration="2312000" />
       <workItem from="1487471994554" duration="13347000" />
-      <workItem from="1487519589821" duration="272000" />
+      <workItem from="1487519589821" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -555,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487487937465</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixed link buket">
+      <created>1487519925549</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1487519925549</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27217000" />
+    <option name="totallyTimeSpent" value="27569000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -605,7 +606,8 @@
     <MESSAGE value="added some stuff including cart controller and model" />
     <MESSAGE value="added current cart module" />
     <MESSAGE value="if session nill then equal 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="if session nill then equal 1" />
+    <MESSAGE value="fixed link buket" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed link buket" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -971,8 +973,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/store/buket.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="95" column="90" lean-forward="false" selection-start-line="95" selection-start-column="90" selection-end-line="95" selection-end-column="90" />
+        <state relative-caret-position="515">
+          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding />
         </state>
       </provider>
