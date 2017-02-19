@@ -93,7 +93,7 @@ tree measures about 10" tall.</span> <span style="display:none;" itemprop="image
                     <div class="eight columns alpha">
                       <div class="prod-img-box">
 
-                        <%= @product.image_url_cart %>
+                        <%= link_to image_tag(@product.image_url_cart), buket_store_path(@product), :id => 'product-image' %>
 
                         <div class="time-box">
                           <h3 class="next"> Следующая доступная доставка в Челябинске</h3>

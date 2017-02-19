@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Product.delete_all
+
 Product.create(:rus_title => "Розы", :description => "Все про розы в клубе любителей дачи. Виды роз, сорта, тонкости выращивания и ухода, практические советы дачников.", :price => 1460, :image_url => "the-b-day-winner-collection_feature-winnie-bday-feature.jpg", :image_url_cart => "the-in-it-to-win-it-full-bloomthat-biggirl-bento-minispa-large.jpg")
 Product.create(:rus_title => "Тюльпаны", :description => "Цветы тюльпаны – выращивание. Виды и сорта тюльпанов. Посадка тюльпанов в грунт – когда сажать тюльпаны: посадка тюльпанов.", :price => 2950, :image_url => "the-isabella-collection_feature-featured-image-isabelle.jpg", :image_url_cart => "the-in-it-to-win-it-full-bloomthat-biggirl-bento-minispa-large.jpg")
 Product.create(:rus_title => "Ромашки", :description => "Ромашка аптечная помогает справиться с простудой, насморком, ангиной, сердечными заболеваниями, заболеваниями пищеварительной системы.", :price => 3100, :image_url => "the-noelle-collection_feature-bloomthat-noelle-feature.jpg", :image_url_cart => "the-in-it-to-win-it-full-bloomthat-biggirl-bento-minispa-large.jpg")
