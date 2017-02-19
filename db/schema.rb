@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170218033052) do
+ActiveRecord::Schema.define(version: 20170219164146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,26 @@ ActiveRecord::Schema.define(version: 20170218033052) do
     t.index ["cart_id"], name: "index_line_items_on_cart_id", using: :btree
     t.index ["order_id"], name: "index_line_items_on_order_id", using: :btree
     t.index ["product_id"], name: "index_line_items_on_product_id", using: :btree
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string   "first_name",          limit: 100
+    t.string   "last_name",           limit: 100
+    t.string   "company"
+    t.string   "phone_number",        limit: 30
+    t.string   "address"
+    t.string   "address_apartment",   limit: 40
+    t.string   "email"
+    t.string   "date"
+    t.string   "time"
+    t.string   "reason_sending"
+    t.string   "note_from"
+    t.string   "note_to"
+    t.text     "note"
+    t.string   "special_instruction"
+    t.string   "pay_type"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
   create_table "products", force: :cascade do |t|

@@ -5,6 +5,13 @@ Rails.application.routes.draw do
   root "store#main"
 
 
+  resources :orders do
+    member do
+      get 'when'
+      get 'extra'
+    end
+  end
+
   resources :store, :except => [:show] do
     member do
       get 'buket'
