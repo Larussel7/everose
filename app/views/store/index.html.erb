@@ -20,7 +20,9 @@
           <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
           <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
 
+          <& if ses1 = 1 &>
           <% ses1 = session[:cart_id] %>
+
 
           <li class="sign-in-button"> <%= link_to 'Кор', cart_path(ses1), :class => 'cart' %> </li>
 
