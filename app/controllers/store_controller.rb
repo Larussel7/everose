@@ -7,6 +7,12 @@ class StoreController < ApplicationController
 
   def index
     @products = Product.all
+    if session[:cart_id]
+      ses1 = session[:cart_id]
+      @path = cart_path(ses1)
+    else
+      @path = carts_path
+    end
   end
 
   def buket
