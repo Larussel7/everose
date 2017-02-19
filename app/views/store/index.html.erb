@@ -1,38 +1,5 @@
 <% content_for :title, "Наши цветы" %>
 
-<style type="text/css" media="screen">
-  .collection-location-hover {
-    background-color: #eee;
-    transition: all 500ms ease 0s;
-    -webkit-transition: all 500ms ease 0s;
-    -moz-transition: all 500ms ease 0s;
-    -ms-transition: all 500ms ease 0s;
-    -o-transition: all 500ms ease 0s;
-    outline: 0;
-  }
-</style>
-<style type="text/css">
-  .fancybox-margin {
-    margin-right: 0px;
-  }
-</style>
-<script async="true" type="text/javascript" src="paged2_files/E2HAZN2FYNF53ELGV4TWGT.js"></script>
-<div style="width: 1px; height: 1px; display: inline; position: absolute;"><img style="border-style:none;" alt="" src="paged2_files/out.txt" width="1" height="1"><img style="border-style:none;" alt="" src="paged2_files/out_002.gif" width="1" height="1"><img style="border-style:none;" alt="" src="paged2_files/out_003.gif" width="1" height="1"><img style="border-style:none;" alt="" src="paged2_files/out_002.html" width="1" height="1">
-</div>
-<script type="text/javascript" src="paged2_files/sendrolling.js"></script>
-<div style="width: 1px; height: 1px; display: inline; position: absolute;"><img style="border-style:none;" alt="" src="paged2_files/out_009.gif" width="1" height="1">
-  <img style="border-style:none;" alt="" src="paged2_files/out_007.gif" width="1" height="1">
-  <img style="border-style:none;" alt="" src="paged2_files/out_008.gif" width="1" height="1">
-  <img style="border-style:none;" alt="" src="paged2_files/out_004.gif" width="1" height="1">
-  <img style="border-style:none;" alt="" src="paged2_files/out_005.gif" width="1" height="1">
-  <img style="border-style:none;" alt="" src="paged2_files/out_006.gif" width="1" height="1">
-  <img style="border-style:none;" alt="" src="paged2_files/out.html" width="1" height="1">
-  <img style="border-style:none;" alt="" src="paged2_files/out.gif" width="1" height="1">
-</div>
-
-</head>
-
-<body>
 <div class="these-are-not-the-divs-youre-looking-for">
   <div id="fixed-header" class="container content header">
     <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
@@ -42,8 +9,9 @@
     </div>
     <div class="container" id="header-contain">
       <div class="four columns logo">
-        <a href="https://www.bloomthat.com/" title="BloomThat"><img src="<%=asset_path 'logo.png' %>" alt="Handcrafted blooms. Unexpected delights. Same day flower delivery.">
-        </a>
+
+        <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
+
       </div>
       <div class="eight columns header-col menu-col" id="desktop-header-menu">
         <ul class="master_footer lead-menu">
@@ -51,9 +19,11 @@
           <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
           <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
           <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
+
           <% ses1 = session[:cart_id] %>
 
-          <li class="sign-in-button"> <%= link_to('Кор', {:controller => :carts, :action => ses1}, :class => 'cart') %> </li>
+          <li class="sign-in-button"> <%= link_to 'Кор', cart_path(ses1), :class => 'cart' %> </li>
+
           <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://www.#.com/login">Войти</a> </li>
         </ul>
       </div>
@@ -283,14 +253,14 @@
 
 
                             <div class="product">
-                              <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+                              <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
                               <div class="product-info">
                                 <div class="info-top">
                                   <div class="title"><span><%= product.rus_title %></span><b><!-- react-text: 47 --> · <!-- /react-text --><span> <%= number_to_currency(product.price) %></span></b>
                                   </div>
                                   <p class="when-deliv">available Today, 1PM-3PM</p>
                                 </div>
-                                <div class="info-bottom"><%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                                <div class="info-bottom"><%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
                                 </div>
                               </div>
                               <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
@@ -332,14 +302,14 @@
 
 
                             <div class="product">
-                              <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+                              <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
                               <div class="product-info">
                                 <div class="info-top">
                                   <div class="title"><span><%= product.rus_title %></span><b><!-- react-text: 47 --> · <!-- /react-text --><span> <%= number_to_currency(product.price) %></span></b>
                                   </div>
                                   <p class="when-deliv">available Today, 1PM-3PM</p>
                                 </div>
-                                <div class="info-bottom"><%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                                <div class="info-bottom"><%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
                                 </div>
                               </div>
                               <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
@@ -375,7 +345,7 @@
 <div id="fb-root"></div>
 <div class="arrow_box_email-capture" id="email-capture-modal" style="display:none;" data-backdrop="static" data-keyboard="false">
   <div class="bottom-layer">
-    <div class="modal-body"> <img class="modal-bg-img" src="paged2_files/bloomthat-email-modal-bg1100px.jpg" alt="BloomThat Send Something" title="BloomThat Send Something">
+    <div class="modal-body">
       <div id="before-jesus-a">
         <div class="modal-over-body">
           <h2 class="email-cap-head"> There's something<br> you should know. </h2> </div>
@@ -404,7 +374,7 @@
 </div>
 <div class="arrow_box_email-capture" id="email-capture-modal-b" style="display:none;" data-backdrop="static" data-keyboard="false">
   <div class="bottom-layer">
-    <div class="modal-body"> <img class="modal-bg-img" src="paged2_files/bloomthat-email-modal-bg-2a1100px.jpg" alt="BloomThat Send Something" title="BloomThat Send Something">
+    <div class="modal-body">
       <div id="before-jesus-b">
         <div class="modal-over-body sign-head">
           <h2 class="email-cap-head sign-two-head"> Welcome to<br> the Bloomcrew! </h2> </div>
@@ -573,7 +543,7 @@
 </div>
 <div class="arrow_box_desktop" id="footer-zip-request-modal" data-backdrop="static" data-keyboard="false" style="display:none;">
   <div class="bottom-layer">
-    <div class="modal-body"> <img class="rose-chop" src="paged2_files/bloomthat-cut-up-rose2x.png" alt="BloomThat" title="BloomThat">
+    <div class="modal-body">
       <div>
         <h2 class="another-header"> <strong>Great</strong> Choice! </h2>
         <h3 class="another-smaller-header"> Now all we need is the zip. </h3>

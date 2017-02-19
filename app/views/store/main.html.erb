@@ -10,7 +10,7 @@
     </div>
     <div class="container" id="header-contain">
       <div class="four columns logo">
-        <%= link_to image_tag("logo.png", :alt => 'Добавить', :title => 'BloomThat'), root_path %>
+        <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
       </div>
       <div class="eight columns header-col menu-col" id="desktop-header-menu">
         <ul class="master_footer lead-menu">
@@ -82,7 +82,7 @@
 
 
                         <div class="product slick-slide slick-active" data-slick-index=<%= product.id %> aria-hidden="false" style="width: 375px;">
-                          <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+                          <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
                           <div class="product-info">
                             <div class="info-top">
                               <div class="title">
@@ -90,7 +90,7 @@
                               </div>
                             </div>
                             <div class="info-bottom">
-                              <%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                              <%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
                             </div>
 
 
@@ -406,7 +406,7 @@
 
                           <div class="product">
 
-                            <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+                            <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
 
 
                             <div class="product-info">
@@ -415,7 +415,7 @@
                                 </div>
                                 <p class="when-deliv">available Tomorrow, 11AM-1PM</p>
                               </div>
-                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
                               </div>
                             </div>
                             <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
@@ -457,7 +457,7 @@
 
                           <div class="product">
 
-                            <%= link_to image_tag(product.image_url), store_path(product), :class => "collecton-grid-image" %>
+                            <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
 
 
                             <div class="product-info">
@@ -466,7 +466,7 @@
                                 </div>
                                 <p class="when-deliv">available Tomorrow, 11AM-1PM</p>
                               </div>
-                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", store_path(product), :class => "synth-product_link button" %>
+                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
                               </div>
                             </div>
                             <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">

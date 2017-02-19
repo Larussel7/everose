@@ -2,7 +2,6 @@
 //inputCity.setAttribute('value', 'Челябинск');
 
 $(document).ready(function(){
-    console.log("666");
     $("#input_city").attr("value", "Челябинск");
 
 
@@ -96,7 +95,7 @@ $("#keep-on-bloomin").click(function() {
 });
 
 // ajax for checkout test
-$(function (){
+/*$(function (){
     $.ajax({
         type: 'GET',
         url: '/line_items/5.json',
@@ -105,4 +104,5 @@ $(function (){
         }
     });
 });
+*/
 

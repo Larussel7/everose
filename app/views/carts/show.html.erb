@@ -2,10 +2,6 @@
 <% total = 0 %>
 
 
-
-
-
-    <body>
         <div class="these-are-not-the-divs-youre-looking-for">
           <div id="fixed-header" class="container content header">
               <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
@@ -15,17 +11,18 @@
               </div>
               <div class="container" id="header-contain">
                   <div class="four columns logo">
-                      <a href="https://#/flowers" title="BloomThat"><img src="<%=asset_path 'logo.png' %>" alt="Handcrafted blooms. Unexpected delights. Same day flower delivery.">
-                      </a>
+
+                    <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
+
                   </div>
                   <div class="eight columns header-col menu-col" id="desktop-header-menu">
                       <ul class="master_footer lead-menu">
 
-                          <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
-
-                          <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'story'}) %> </li>
-                          <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'contact'}) %> </li>
+                          <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', store_index_path %> </li>
+                          <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
+                          <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
                           <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://#/login">Войти</a> </li>
+
                       </ul>
                   </div>
                   <div id="desktop-header-gate"></div>
@@ -59,9 +56,6 @@
                               <% @cart.line_items.each do |item| %>
 
 
-                              <% product1 = item.product.title %>
-                              <% product2 = product1.downcase %>
-                              <% product3 = product2.delete " " %>
 
                               <% total += item.product.price * item.quantity %>
 
@@ -73,7 +67,7 @@
                                     </td>
                                     <td class="cart-product-row cart-product-title-row">
                                         <p class="">
-                                          <%= link_to(item.product.rus_title, {:controller => :store, :action => product3}, :class => 'cart') %>
+                                          <%= link_to(item.product.rus_title, {:controller => :store, :action => 'index'}, :class => 'cart') %>
                                            </p>
                                     </td>
                                     <td class="cart-product-row cart-product-price-row text-center"> <%= item.product.price %>р </td>
@@ -117,7 +111,7 @@
                                             <div class="alpha wrap-magic" id="button_block_right">
                                                 <div class="add-to-cart-button-wrapper">
 
-                                                  <%= button_to "Оплатить", new_order_path, method: :get, :class => "slinky-advanced" %>
+                                                  <%= button_to "Оплатить", root_path, method: :get, :class => "slinky-advanced" %>
 
 
 
@@ -141,7 +135,7 @@
         <div id="fb-root"></div>
         <div class="arrow_box_email-capture" id="email-capture-modal" style="display:none;" data-backdrop="static" data-keyboard="false">
             <div class="bottom-layer">
-                <div class="modal-body"> <img class="modal-bg-img" src="CartManuItems_files/bloomthat-email-modal-bg1100px.jpg" alt="BloomThat Send Something" title="BloomThat Send Something">
+                <div class="modal-body">
                     <div id="before-jesus-a">
                         <div class="modal-over-body">
                             <h2 class="email-cap-head"> There's something<br> you should know. </h2> </div>
@@ -170,7 +164,7 @@
         </div>
         <div class="arrow_box_email-capture" id="email-capture-modal-b" style="display:none;" data-backdrop="static" data-keyboard="false">
             <div class="bottom-layer">
-                <div class="modal-body"> <img class="modal-bg-img" src="CartManuItems_files/bloomthat-email-modal-bg-2a1100px.jpg" alt="BloomThat Send Something" title="BloomThat Send Something">
+                <div class="modal-body">
                     <div id="before-jesus-b">
                         <div class="modal-over-body sign-head">
                             <h2 class="email-cap-head sign-two-head"> Welcome to<br> the Bloomcrew! </h2> </div>
@@ -297,7 +291,7 @@
         </div>
         <div class="arrow_box_desktop" id="footer-zip-request-modal" data-backdrop="static" data-keyboard="false" style="display:none;">
             <div class="bottom-layer">
-                <div class="modal-body"> <img class="rose-chop" src="CartManuItems_files/bloomthat-cut-up-rose2x.png" alt="BloomThat" title="BloomThat">
+                <div class="modal-body">
                     <div>
                         <h2 class="another-header"> <strong>Great</strong> Choice! </h2>
                         <h3 class="another-smaller-header"> Now all we need is the zip. </h3>
