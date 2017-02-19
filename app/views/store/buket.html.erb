@@ -92,7 +92,8 @@ you". Includes a 4" olive tree in a 5" diameter terracotta pot. Potted
 tree measures about 10" tall.</span> <span style="display:none;" itemprop="image">https://fdn.bloomthat.com/files/products/the-olivier/full/1479773501/the-olivier-full-bloomthat-olivetree-large.jpg</span> <span style="display:none;" class="mp-auto-viewed_product" data-mp_viewed_product_name="The Olivier" data-mp_viewed_product_price="50.00" data-mp_viewed_product_promotion="false" data-mp_viewed_product_sold_out="false"></span>
                     <div class="eight columns alpha">
                       <div class="prod-img-box">
-                        <%= link_to image_tag(@product.image_url_cart), {:controller => :store, :action => @product3}, {id: 'product-image', title: 'The Olivier'} %>
+
+                        <%= link_to image_tag(@product.image_url_cart), buket_store_path(@product), :id => 'product-image' %>
 
                         <div class="time-box">
                           <h3 class="next"> Следующая доступная доставка в Челябинске</h3>
