@@ -1576,7 +1576,7 @@
 
 
 
-                <%= form_for @when do |f| %>
+                <%= form_for @when, :url => url_for(:controller => 'whens', :action => 'create') do |f| %>
 
                     <%= f.text_field :date %>
                     <%= f.submit "Далее" %>

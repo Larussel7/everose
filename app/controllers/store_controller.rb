@@ -1,7 +1,7 @@
 class StoreController < ApplicationController
 
   def main
-    @products = Product.order(:id)
+    @products = Product.all
     render('main')
   end
 

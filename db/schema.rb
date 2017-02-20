@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170219164146) do
+ActiveRecord::Schema.define(version: 20170220031552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,19 @@ ActiveRecord::Schema.define(version: 20170219164146) do
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "deliveries", force: :cascade do |t|
+    t.string   "first_name",        limit: 100
+    t.string   "last_name",         limit: 100
+    t.string   "company"
+    t.string   "phone_number",      limit: 30
+    t.string   "address"
+    t.string   "address_apartment", limit: 40
+    t.integer  "order_id"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.index ["order_id"], name: "index_deliveries_on_order_id", using: :btree
   end
 
   create_table "line_items", force: :cascade do |t|
@@ -33,23 +46,15 @@ ActiveRecord::Schema.define(version: 20170219164146) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string   "first_name",          limit: 100
-    t.string   "last_name",           limit: 100
-    t.string   "company"
-    t.string   "phone_number",        limit: 30
-    t.string   "address"
-    t.string   "address_apartment",   limit: 40
     t.string   "email"
-    t.string   "date"
-    t.string   "time"
     t.string   "reason_sending"
     t.string   "note_from"
     t.string   "note_to"
     t.text     "note"
     t.string   "special_instruction"
     t.string   "pay_type"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "products", force: :cascade do |t|
@@ -62,6 +67,15 @@ ActiveRecord::Schema.define(version: 20170219164146) do
     t.string   "image_url_cart_small"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+  end
+
+  create_table "whens", force: :cascade do |t|
+    t.string   "date"
+    t.string   "time"
+    t.integer  "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_whens_on_order_id", using: :btree
   end
 
 end

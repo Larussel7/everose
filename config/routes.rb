@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
 
 
+
   # TODO change root
   root "store#main"
 
 
+  resources :deliveries
+
+
   resources :orders do
-    member do
-      get 'when'
-      get 'extra'
-    end
+    resources :whens
   end
 
   resources :store, :except => [:show] do

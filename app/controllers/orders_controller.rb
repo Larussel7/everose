@@ -15,8 +15,8 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @order = Order.new(order_params)
-    @order.add_line_items_from_cart(@cart)
+    @delivery = Order.new(order_params)
+    @delivery.add_line_items_from_cart(@cart)
     if @order.save
       redirect_to(when_order_path(@order))
     else
