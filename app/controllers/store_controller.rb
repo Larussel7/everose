@@ -1,6 +1,9 @@
 class StoreController < ApplicationController
 
   def main
+
+    @dates = (1.month.ago.to_date..Date.today).map{ |date| date}
+
     @products = Product.all
     render('main')
   end
@@ -28,4 +31,8 @@ class StoreController < ApplicationController
 
   def update
   end
+
+
+
+
 end

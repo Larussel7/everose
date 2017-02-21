@@ -243,17 +243,17 @@
                         <h4 class="sub-four lfte"> <strong>Сегодня</strong> &nbsp;<i class="fa fa-chevron-down"></i> </h4> </div>
                     </div>
                     <div class="delivery-location-section" style="display:none;">
-                      <h4 class="arrow-text"> Enter a city name or postal code </h4>
+                      <h4 class="arrow-text"> Введите город </h4>
                       <div class="hero-address-gate-a">
                         <div class="container modal-wrap-container">
                           <div class="row modal-wrap-row">
                             <form action="https://#/locations/set_zip_code" accept-charset="utf-8" class="contact_form auto-submit" id="location-search-form" method="get">
                               <div class="modal-input-kicker">
-                                <input class="bloom-input-100" type="text" placeholder="Enter your zip code" name="zipcode" id="location-search" autocomplete="off">
+                                <input class="bloom-input-100" type="text" placeholder="" name="zipcode" id="location-search" autocomplete="off">
                                 <div class="pac-container pac-logo" style="width: 398px; position: absolute; display:none;z-index:999;" id="location-search-results"></div>
                               </div>
                               <div class="modal-button-kicker">
-                                <button type="button" id="location-search-submit"><span>GO</span>
+                                <button type="button" id="location-search-submit"><span>ВЫБРАТЬ</span>
                                 </button>
                               </div>
                             </form>
@@ -303,76 +303,28 @@
                       </div>
                     </div>
                     <div class="delivery-time-section" style="display:none;">
-                      <h4 class="arrow-text"> Choose a delivery date to see available blooms </h4>
+                      <h4 class="arrow-text"> Выберите дату доставки </h4>
                       <div class="container modal-wrap-container">
                         <div class="row modal-wrap-row">
                           <form action="https://#/locations/set_date" accept-charset="utf-8" id="date-picker-form" method="get">
                             <input type="hidden" name="date" value="" id="date-picker-value">
                             <div id="loc_spot">
                               <ul class="dtpicker">
-                                <li class="dtbox dt_date selected" data-date="2016-11-25">
-                                  <h3 class="pick_top"> Today </h3>
-                                  <h4 class="pick_header"> Nov 25th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-11-26">
-                                  <h3 class="pick_top"> Tomorrow </h3>
-                                  <h4 class="pick_header"> Nov 26th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-11-27">
-                                  <h3 class="pick_top"> Sunday </h3>
-                                  <h4 class="pick_header"> Nov 27th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-11-28">
-                                  <h3 class="pick_top"> Monday </h3>
-                                  <h4 class="pick_header"> Nov 28th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-11-29">
-                                  <h3 class="pick_top"> Tuesday </h3>
-                                  <h4 class="pick_header"> Nov 29th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-11-30">
-                                  <h3 class="pick_top"> Wednesday </h3>
-                                  <h4 class="pick_header"> Nov 30th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-01">
-                                  <h3 class="pick_top"> Thursday </h3>
-                                  <h4 class="pick_header"> Dec 1st </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-02">
-                                  <h3 class="pick_top"> Friday </h3>
-                                  <h4 class="pick_header"> Dec 2nd </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-03">
-                                  <h3 class="pick_top"> Saturday </h3>
-                                  <h4 class="pick_header"> Dec 3rd </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-04">
-                                  <h3 class="pick_top"> Sunday </h3>
-                                  <h4 class="pick_header"> Dec 4th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-05">
-                                  <h3 class="pick_top"> Monday </h3>
-                                  <h4 class="pick_header"> Dec 5th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-06">
-                                  <h3 class="pick_top"> Tuesday </h3>
-                                  <h4 class="pick_header"> Dec 6th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-07">
-                                  <h3 class="pick_top"> Wednesday </h3>
-                                  <h4 class="pick_header"> Dec 7th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-08">
-                                  <h3 class="pick_top"> Thursday </h3>
-                                  <h4 class="pick_header"> Dec 8th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-09">
-                                  <h3 class="pick_top"> Friday </h3>
-                                  <h4 class="pick_header"> Dec 9th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-10">
-                                  <h3 class="pick_top"> Saturday </h3>
-                                  <h4 class="pick_header"> Dec 10th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-11">
-                                  <h3 class="pick_top"> Sunday </h3>
-                                  <h4 class="pick_header"> Dec 11th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-12">
-                                  <h3 class="pick_top"> Monday </h3>
-                                  <h4 class="pick_header"> Dec 12th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-13">
-                                  <h3 class="pick_top"> Tuesday </h3>
-                                  <h4 class="pick_header"> Dec 13th </h4> </li>
-                                <li class="dtbox dt_date" data-date="2016-12-14">
-                                  <h3 class="pick_top"> Wednesday </h3>
-                                  <h4 class="pick_header"> Dec 14th </h4> </li>
+
+
+
+                                <% @dates.each do |date| %>
+
                                 <li class="dtbox dt_date" data-date="2016-12-15">
-                                  <h3 class="pick_top"> Thursday </h3>
-                                  <h4 class="pick_header"> Dec 15th </h4> </li>
+
+
+
+                                  <h3 class="pick_top"> <%= Russian::strftime(date, "%A") %> </h3>
+                                  <h4 class="pick_header"> <%= Russian::strftime(date, "%d %b") %> </h4>
+
+                                </li>
+                                    <% end %>
+
                               </ul>
                             </div>
                           </form>
@@ -480,7 +432,7 @@
                           </div>
                       <% end %>
 
-
+                  <% cookies[:time] = { :value => "Time I just set", :expires => 1.hour.from_now } %>
 
 
                     </div>

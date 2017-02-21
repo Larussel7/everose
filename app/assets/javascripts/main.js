@@ -42,9 +42,7 @@ $(document).ready(function(){
     });
 });
 
-$( "#input_city" ).click(function() {
-    alert( "Handler for .click() called." );
-});
+
 
 $("#delivery-select-time").click(function() {
     var isVisible = $(".delivery-time-section").is(":visible");
@@ -52,6 +50,9 @@ $("#delivery-select-time").click(function() {
         $(".delivery-time-section").slideUp();
     } else {
         $(".delivery-time-section").slideDown();
+        if ($(".delivery-location-section").is(":visible")){
+            $(".delivery-location-section").slideUp();
+        }
     }
 });
 
@@ -61,9 +62,18 @@ $("#delivery-select-loc").click(function() {
         $(".delivery-location-section").slideUp();
     } else {
         $(".delivery-location-section").slideDown();
+        if ($(".delivery-time-section").is(":visible")){
+            $(".delivery-time-section").slideUp();
+        }
     }
 
 });
+
+$("#location-search-submit").click(function() {
+    $(".delivery-location-section").slideUp();
+});
+
+
 
 $(".dtbox").click(function() {
     var text = $("h4", this).text();
