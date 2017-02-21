@@ -6,11 +6,12 @@ Rails.application.routes.draw do
   root "store#main"
 
 
-  resources :deliveries
+  resources :deliveries, only: [:new, :create]
 
 
   resources :orders do
-    resources :whens
+    resources :whens, only: [:new, :create]
+    resources :extras, only: [:new, :create]
   end
 
   resources :store, :except => [:show] do

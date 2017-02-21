@@ -24,25 +24,6 @@ class OrdersController < ApplicationController
     end
   end
 
-  def when
-  end
-
-  def update
-    if @order.update_attributes(order_params)
-      redirect_to(extra_order_path(@order))
-    else
-      render("when")
-    end
-  end
-
-  def extra
-  end
-
-  def note
-  end
-
-  def payment
-  end
 
   private
   def set_order
