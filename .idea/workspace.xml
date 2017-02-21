@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="249bf546-2d12-4c60-902c-7b7efb762733" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/everose.iml" afterPath="$PROJECT_DIR$/.idea/everose.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/main.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/store_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/store_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/store/main.html.erb" afterPath="$PROJECT_DIR$/app/views/store/main.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/whens/when.html.erb" afterPath="$PROJECT_DIR$/app/views/whens/when.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -78,11 +71,9 @@
       <file leaf-file-name="main.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/store/main.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-              <folding>
-                <marker date="1487645702000" expanded="true" signature="19123:19598" ph="..." />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="321" column="87" lean-forward="false" selection-start-line="321" selection-start-column="87" selection-end-line="321" selection-end-column="87" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -532,7 +523,7 @@
       <workItem from="1487519589821" duration="14818000" />
       <workItem from="1487558687329" duration="7991000" />
       <workItem from="1487637679766" duration="18000" />
-      <workItem from="1487637729280" duration="7530000" />
+      <workItem from="1487637729280" duration="8095000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -688,11 +679,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487640834223</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added russian dates">
+      <created>1487645734062</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1487645734063</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57302000" />
+    <option name="totallyTimeSpent" value="57867000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -743,7 +741,8 @@
     <MESSAGE value="added delivery and when controllers" />
     <MESSAGE value="added extra controller and model" />
     <MESSAGE value="added payment note" />
-    <option name="LAST_COMMIT_MESSAGE" value="added payment note" />
+    <MESSAGE value="added russian dates" />
+    <option name="LAST_COMMIT_MESSAGE" value="added russian dates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1157,11 +1156,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/store/main.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-          <folding>
-            <marker date="1487645702000" expanded="true" signature="19123:19598" ph="..." />
-          </folding>
+        <state relative-caret-position="380">
+          <caret line="321" column="87" lean-forward="false" selection-start-line="321" selection-start-column="87" selection-end-line="321" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
