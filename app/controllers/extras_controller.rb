@@ -11,7 +11,7 @@ class ExtrasController < ApplicationController
     @order.extra = @extra
 
     if @extra.save
-      redirect_to(store_index_path)
+      redirect_to(new_order_note_path(@order))
     else
       render("extra")
     end

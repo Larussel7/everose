@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
 
 
+
+
+
+
   # TODO change root
   root "store#main"
 
@@ -12,6 +16,8 @@ Rails.application.routes.draw do
   resources :orders do
     resources :whens, only: [:new, :create]
     resources :extras, only: [:new, :create]
+    resources :notes, only: [:new, :create]
+    resources :payments, only: [:new, :create]
   end
 
   resources :store, :except => [:show] do
