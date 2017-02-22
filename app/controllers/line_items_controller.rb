@@ -23,7 +23,7 @@ class LineItemsController < ApplicationController
     respond_to do |format|
       if @line_item.save
         format.html { redirect_to @line_item.cart,
-                                  notice: 'Цветок был добавлен' }
+                                  notice: 'Цветок успешно добавлен' }
         format.json { render action: 'show',
                              status: :created, location: @line_item }
       else

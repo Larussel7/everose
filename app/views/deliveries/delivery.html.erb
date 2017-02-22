@@ -199,7 +199,7 @@
                 <div class="row">
                   <div id="next-alone" class="five columns omega wrap-magic">
 
-                    <%= f.submit "Далее",:id => "submit-to-me" %>
+                    <%= f.submit "Далее", :id => "submit-to-me" %>
 
                   </div>
                 </div>
@@ -210,36 +210,70 @@
           </div>
         </div>
         <div class="six columns">
-          <div class="six columns well" id="cart_summary_log">
-            <span class="edit_icon"><a href="/cart"><i class="fa fa-pencil"></i></a></span>
-            <div class="mobile_cart_column">
 
+          <div class="six columns well" id="when_summary">
+            <span class="edit_icon">
+
+
+              <%= link_to image_tag("pencil.png", :class => "fa-pencil"), root_path %>
+
+            </span>
+            <div class="mobile_cart_column">
+              <table class="order_tracker">
+                <tr height="10">
+                  <td colspan="3"></td>
+                </tr>
+                <tr class="checkout_row" style="border-bottom:1px solid #eeeeee">
+                  <td style="width:56px;" class="table_left_col">
+                    Дата
+                  </td>
+                  <td class="table_full_right_col">
+                    <%= cookies[:date] %>
+                  </td>
+                </tr>
+                <tr class="checkout_row">
+                  <td class="table_left_col">
+                    Время
+                  </td>
+                  <td class="table_full_right_col">
+                  Сейчас
+                  </td>
+                </tr>
+                <tr height="10">
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="six columns well" id="cart_summary_log">
+            <span class="edit_icon">
+              <%= link_to image_tag("pencil.png", :class => "fa-pencil"), root_path %>
+            </span>
+            <div class="mobile_cart_column">
               <table class="order_tracker">
 
 
 
                 <tr height="10">
                   <td></td>
-
                 </tr>
 
-                <tr class="table_product_row">
 
+                <%= render(@cart.line_items) %>
 
-                </tr>
                 <tr>
                   <td class="table_left_col">
                     &nbsp;
                   </td>
                   <td class="table_row_title">
                     Delivery
+
                   </td>
                   <td class="table_row_result">
                     <em>TBD</em>
                   </td>
                 </tr>
               </table>
-
             </div>
           </div>
         </div>

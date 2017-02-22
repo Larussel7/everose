@@ -32,7 +32,7 @@ $("#gate-when-wrap").click(function() {
 
 $(".gate-location-selector-item").click(function(e) {
     var text = $(e.target).text();
-    Cookies.set('time', text);
+    Cookies.set('date', text);
     console.log(text);
     $("#gate-when-wrap .header_result").text(text);
     $(".gate-location-selector_hero-header").slideUp();
@@ -40,6 +40,6 @@ $(".gate-location-selector-item").click(function(e) {
 
 
 // Adding loading gif to button
-$("#add-submit").click(function() {
-    $('#add-submit').addClass( "loading_img" );
-});
+// $("#add-submit").click(function() {
+//     $('#add-submit').addClass( "loading_img" );
+// });

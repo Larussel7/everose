@@ -80,7 +80,7 @@ $("#location-search-submit").click(function() {
 $(".dtbox").click(function() {
     var text = $("h4", this).text();
     var text2 = $("h3", this).text();
-    Cookies.set('time', text2);
+    Cookies.set('date', text2);
     console.log(text);
     $("#delivery-select-time .sub-four").text(text);
     $(".delivery-time-section").slideUp();

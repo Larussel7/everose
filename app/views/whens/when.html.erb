@@ -1382,10 +1382,10 @@
                 <%= form_for @when, :url => url_for(:controller => 'whens', :action => 'create') do |f| %>
 
 
-                    <%= f.hidden_field :date, :value => cookies[:time] %>
+                    <%= f.hidden_field :date, :value => cookies[:date] %>
 
 
-                    <%= f.submit "Далее", :id => "submit-to-me", :class => "loading_img" %>
+                    <%= f.submit "Далее", :id => "submit-to-me" %>
                 <% end %>
 
 
@@ -1477,6 +1477,7 @@
                 <tr height="10">
                   <td></td>
                 </tr>
+
                 <tr class="table_product_row">
                   <td class="table_product_img">
                     <img class="table_icon" src="https://fdn.bloomthat.com/files/products/the-tu-hot-tu-handle/icon/1486754168/the-tu-hot-tu-handle-icon-bloomthat-tulip-pitcher-iconCODERED.png">
