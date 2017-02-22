@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="249bf546-2d12-4c60-902c-7b7efb762733" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/ajax-loader.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/whens/when.html.erb" afterPath="$PROJECT_DIR$/app/views/whens/when.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -79,21 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="when.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="when.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/whens/when.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="1384" column="70" lean-forward="false" selection-start-line="1384" selection-start-column="70" selection-end-line="1384" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deliveries.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/deliveries.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="545">
+              <caret line="1387" column="87" lean-forward="false" selection-start-line="1387" selection-start-column="87" selection-end-line="1387" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -109,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="19067" column="39" lean-forward="false" selection-start-line="19067" selection-start-column="39" selection-end-line="19067" selection-end-column="39" />
+            <state relative-caret-position="572">
+              <caret line="19066" column="21" lean-forward="true" selection-start-line="19066" selection-start-column="21" selection-end-line="19066" selection-end-column="32" />
               <folding>
                 <element signature="e#320515#350414#2" expanded="true" />
                 <element signature="e#350501#379872#2" expanded="true" />
@@ -226,9 +215,9 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/store.js" />
         <option value="$PROJECT_DIR$/app/views/carts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/cart.js" />
-        <option value="$PROJECT_DIR$/app/views/whens/when.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
+        <option value="$PROJECT_DIR$/app/views/whens/when.html.erb" />
       </list>
     </option>
   </component>
@@ -617,7 +606,7 @@
       <workItem from="1487637679766" duration="18000" />
       <workItem from="1487637729280" duration="18478000" />
       <workItem from="1487733882674" duration="6525000" />
-      <workItem from="1487741329537" duration="2175000" />
+      <workItem from="1487741329537" duration="2318000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -829,11 +818,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487743006017</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="bags fix">
+      <created>1487744012498</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1487744012498</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76950000" />
+    <option name="totallyTimeSpent" value="77093000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1201,26 +1197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/whens/when.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="1384" column="70" lean-forward="false" selection-start-line="1384" selection-start-column="70" selection-end-line="1384" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/deliveries/delivery.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3015">
           <caret line="201" column="41" lean-forward="false" selection-start-line="201" selection-start-column="41" selection-end-line="201" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1233,10 +1213,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="19067" column="39" lean-forward="false" selection-start-line="19067" selection-start-column="39" selection-end-line="19067" selection-end-column="39" />
+        <state relative-caret-position="572">
+          <caret line="19066" column="21" lean-forward="true" selection-start-line="19066" selection-start-column="21" selection-end-line="19066" selection-end-column="32" />
           <folding>
             <element signature="e#320515#350414#2" expanded="true" />
             <element signature="e#350501#379872#2" expanded="true" />
@@ -1245,6 +1233,14 @@
             <element signature="e#435519#462826#2" expanded="true" />
             <element signature="e#462913#486524#2" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/whens/when.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="1387" column="87" lean-forward="false" selection-start-line="1387" selection-start-column="87" selection-end-line="1387" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
