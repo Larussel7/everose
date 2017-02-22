@@ -111,8 +111,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="19066" column="34" lean-forward="false" selection-start-line="19066" selection-start-column="34" selection-end-line="19066" selection-end-column="34" />
+            <state relative-caret-position="614">
+              <caret line="19067" column="12" lean-forward="false" selection-start-line="19067" selection-start-column="12" selection-end-line="19067" selection-end-column="12" />
               <folding>
                 <element signature="e#320515#350414#2" expanded="true" />
                 <element signature="e#350501#379872#2" expanded="true" />
@@ -616,7 +616,7 @@
       <workItem from="1487637679766" duration="18000" />
       <workItem from="1487637729280" duration="18478000" />
       <workItem from="1487733882674" duration="6525000" />
-      <workItem from="1487741329537" duration="1202000" />
+      <workItem from="1487741329537" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -814,11 +814,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487742429030</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="bags fix">
+      <created>1487742690937</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1487742690937</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75977000" />
+    <option name="totallyTimeSpent" value="76288000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1202,14 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/deliveries.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="673">
@@ -1218,10 +1217,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/deliveries.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="19066" column="34" lean-forward="false" selection-start-line="19066" selection-start-column="34" selection-end-line="19066" selection-end-column="34" />
+        <state relative-caret-position="614">
+          <caret line="19067" column="12" lean-forward="false" selection-start-line="19067" selection-start-column="12" selection-end-line="19067" selection-end-column="12" />
           <folding>
             <element signature="e#320515#350414#2" expanded="true" />
             <element signature="e#350501#379872#2" expanded="true" />
