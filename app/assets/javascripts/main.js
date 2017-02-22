@@ -75,29 +75,18 @@ $("#location-search-submit").click(function() {
 
 
 
+
+
 $(".dtbox").click(function() {
     var text = $("h4", this).text();
+    var text2 = $("h3", this).text();
+    Cookies.set('time', text2);
     console.log(text);
     $("#delivery-select-time .sub-four").text(text);
     $(".delivery-time-section").slideUp();
 });
 
 
-$("#gate-when-wrap").click(function() {
-    var isVisible = $(".gate-location-selector_hero-header").is(":visible");
-
-    if (isVisible){
-        $(".gate-location-selector_hero-header").slideUp();
-    } else {
-        $(".gate-location-selector_hero-header").slideDown();
-    }
-});
-
-$(".gate-location-selector-item").click(function(e) {
-    var text = $(e.target).text();
-    $("#gate-when-wrap .header_result").text(text);
-    $(".gate-location-selector_hero-header").slideUp();
-});
 
 // continue shopping button from cart
 $("#keep-on-bloomin").click(function() {
@@ -115,4 +104,3 @@ $("#keep-on-bloomin").click(function() {
     });
 });
 */
-

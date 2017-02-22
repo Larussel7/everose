@@ -1,0 +1,71 @@
+
+<div class="these-are-not-the-divs-youre-looking-for">
+  <div id="fixed-header" class="container content header">
+    <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
+      <ul class="bt-notification-list">
+        <li id="link-coupon-message"></li>
+      </ul>
+    </div>
+    <div class="container" id="header-contain">
+      <div class="four columns logo">
+
+        <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
+
+      </div>
+      <div class="eight columns header-col menu-col" id="desktop-header-menu">
+        <ul class="master_footer lead-menu">
+
+          <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
+          <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
+          <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
+
+
+          <% ses1 = session[:cart_id] %>
+          <li class="sign-in-button"> <%= link_to 'Кор', @path, :class => 'cart' %> </li>
+
+          <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://www.#.com/login">Войти</a> </li>
+        </ul>
+      </div>
+      <div id="desktop-header-gate">
+        <div class="four columns header-col" id="header-location">
+
+          <div class="gated-wrap-header" id="gate-city-wrap"> <span class="header_label" id="address-search-label">Город</span> <span class="header_result">Челябинск</span> <span class="chevron-proof gate-city-clicker"><i class="fa fa-times-circle"></i></span>
+            <form action="https://www..com/locations/set_zip_code" accept-charset="utf-8" id="gate-location-address-form" method="get">
+              <input name="return_uri" value="flowers" id="return_uri" type="hidden">
+              <input maxlength="255" class="secret-surprise" placeholder="Enter your city or zip code" name="zipcode" id="gate-location-address" style="display:none;" required="" autocomplete="off" type="text">
+              <div class="pac-container pac-logo" style="width: 440px; position: absolute; display:none;margin-top:6px; left: 240px;" id="gate-location-address-results"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="two columns header-col" id="gate-location-selector-header">
+
+          <div class="gated-wrap-header" id="gate-when-wrap" style="border-color: transparent;"> <span class="header_label">Когда</span> <span class="header_result">Сегодня</span> <span class="chevron-proof gate-when-clicker"><i class="fa fa-chevron-circle-down"></i></span> </div>
+          <div class="gate-location-selector_hero-header" id="gate-location-selector-header-list">
+
+            <ul class="location-selector-drop">
+
+              <% @dates.each do |date| %>
+                  <li class="gate-location-selector-item">
+                    <% if date == Date.today %>
+                        <%= "Сегодня" %>
+                    <% else %>
+                        <%= Russian::strftime(date, "%d %b") %>
+                    <% end %>
+
+                  </li>
+              <% end %>
+
+            </ul>
+          </div>
+          <form action="https://www.bloomthat.com/locations/set_date" method="post" accept-charset="utf-8" id="gate-location-selector-form">
+            <input name="date" value="" id="gate-location-selector-date" type="hidden"> </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div style="display:none;" itemprop="brand" itemscope="" itemtype="http://schema.org/Organization"> <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="email">info@bloomthat.com</span> <span style="display:none;" itemprop="foundingLocation">San Francisco, CA</span>
+    <div itemprop="brand" itemscope="" itemtype="http://schema.org/Brand"> <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="logo">https://fdn.bloomthat.com/icons/2014/11/apple-touch-icon-precomposed.png</span> </div>
+  </div>

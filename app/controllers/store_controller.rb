@@ -1,9 +1,8 @@
 class StoreController < ApplicationController
 
+  before_action :set_dates, only: [:main, :index, :buket]
+
   def main
-
-    @dates = (1.month.ago.to_date..Date.today).map{ |date| date}
-
     @products = Product.all
     render('main')
   end
@@ -32,7 +31,9 @@ class StoreController < ApplicationController
   def update
   end
 
-
+  def set_dates
+    @dates = (Date.today..27.days.from_now).map{ |date| date}
+  end
 
 
 end

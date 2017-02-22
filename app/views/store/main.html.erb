@@ -309,23 +309,24 @@
                           <form action="https://#/locations/set_date" accept-charset="utf-8" id="date-picker-form" method="get">
                             <input type="hidden" name="date" value="" id="date-picker-value">
                             <div id="loc_spot">
+
                               <ul class="dtpicker">
 
-
-
                                 <% @dates.each do |date| %>
-
-                                <li class="dtbox dt_date" data-date="2016-12-15">
-
-
-
-                                  <h3 class="pick_top"> <%= Russian::strftime(date, "%a") %> </h3>
-                                  <h4 class="pick_header"> <%= Russian::strftime(date, "%d %b") %> </h4>
-
-                                </li>
-                                    <% end %>
+                                    <li class="dtbox dt_date"">
+                                    <h3 class="pick_top">
+                                      <% if date == Date.today %>
+                                          <%= "Сегодня" %>
+                                      <% else %>
+                                          <%= Russian::strftime(date, "%A") %>
+                                      <% end %>
+                                    </h3>
+                                    <h4 class="pick_header"><%= Russian::strftime(date, "%d %b") %></h4>
+                                    </li>
+                                <% end %>
 
                               </ul>
+
                             </div>
                           </form>
                         </div>
@@ -432,7 +433,7 @@
                           </div>
                       <% end %>
 
-                  <% cookies[:time] = { :value => "Time I just set", :expires => 1.hour.from_now } %>
+
 
 
                     </div>

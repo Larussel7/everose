@@ -132,3 +132,11 @@
         font-size: 16px
     }
 }
+
+
+input[type="submit"].loading_img {
+    background-image: url('ajax-loader.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}

@@ -22,7 +22,8 @@
         </ul>
       </div>
       <div class="checkout-nav-logo">
-        <a href="/flowers" title="BloomThat Flowers"><img class="checklogo" src="https://fdn.bloomthat.com/logos/2014/12/bloomthat-logo.jpg" alt="Handcrafted blooms. Starting at $38. Delivered on demand."> <img class="checklogo mobile" src="https://fdn.bloomthat.com/logos/2014/12/bloomthat-logo-mobile.png" alt="Handcrafted blooms. Starting at $38. Delivered on demand."></a>
+
+        <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
       </div>
     </div>
   </div>
@@ -198,11 +199,8 @@
                 <div class="row">
                   <div id="next-alone" class="five columns omega wrap-magic">
 
-                    <%= f.submit "Далее", :class => "form-button mp-delivery_address_attempted", :id => "submit-to-me" %>
+                    <%= f.submit "Далее",:id => "submit-to-me" %>
 
-                    <button type="button" class="form-button mp-delivery_address_attempted">
-                      <span>Далее</span>
-                      <span class="button-throbber"><img class="ajax_throbber" src="https://fdn.bloomthat.com/icons/home/button-loading-orange.gif"></span></button>
                   </div>
                 </div>
 
