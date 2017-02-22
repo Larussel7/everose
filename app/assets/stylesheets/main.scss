@@ -19062,3 +19062,11 @@ div.nation-wide-banner-home {
     .fancybox-margin {
         margin-right: 0px;
     }
+
+
+input[type="submit"].loading_img {
+  background-image: image_url('ajax-loader.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}

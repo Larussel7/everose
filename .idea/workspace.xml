@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="249bf546-2d12-4c60-902c-7b7efb762733" name="Default" comment="added">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/0a93e677-1257-480a-869f-ed587b5390cf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/790d0292-226a-42dd-be60-98d0cfaf510c.xml" />
+    <list default="true" id="249bf546-2d12-4c60-902c-7b7efb762733" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -104,12 +99,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="137" column="35" lean-forward="false" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
+            <state relative-caret-position="673">
+              <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="674">
+              <caret line="19067" column="29" lean-forward="false" selection-start-line="19067" selection-start-column="29" selection-end-line="19067" selection-end-column="29" />
+              <folding>
+                <element signature="e#320515#350414#2" expanded="true" />
+                <element signature="e#350501#379872#2" expanded="true" />
+                <element signature="e#379959#407794#2" expanded="true" />
+                <element signature="e#407881#435432#2" expanded="true" />
+                <element signature="e#435519#462826#2" expanded="true" />
+                <element signature="e#462913#486524#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,7 +220,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/store/buket.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
         <option value="$PROJECT_DIR$/app/views/deliveries/delivery.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/deliveries.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/deliveries.scss" />
@@ -217,6 +228,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/cart.js" />
         <option value="$PROJECT_DIR$/app/views/whens/when.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
       </list>
     </option>
   </component>
@@ -605,7 +617,7 @@
       <workItem from="1487637679766" duration="18000" />
       <workItem from="1487637729280" duration="18478000" />
       <workItem from="1487733882674" duration="6525000" />
-      <workItem from="1487741329537" duration="213000" />
+      <workItem from="1487741329537" duration="768000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -782,11 +794,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487740828067</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="bags fix">
+      <created>1487741584330</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1487741584330</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74988000" />
+    <option name="totallyTimeSpent" value="75543000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -839,7 +858,8 @@
     <MESSAGE value="added payment note" />
     <MESSAGE value="added russian dates" />
     <MESSAGE value="added js and css" />
-    <option name="LAST_COMMIT_MESSAGE" value="added js and css" />
+    <MESSAGE value="bags fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bags fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1116,13 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="3846" column="0" lean-forward="false" selection-start-line="3846" selection-start-column="0" selection-end-line="3846" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cart.js" />
     <entry file="file://$PROJECT_DIR$/app/views/carts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1186,9 +1199,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="137" column="35" lean-forward="false" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
+        <state relative-caret-position="673">
+          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="19067" column="29" lean-forward="false" selection-start-line="19067" selection-start-column="29" selection-end-line="19067" selection-end-column="29" />
+          <folding>
+            <element signature="e#320515#350414#2" expanded="true" />
+            <element signature="e#350501#379872#2" expanded="true" />
+            <element signature="e#379959#407794#2" expanded="true" />
+            <element signature="e#407881#435432#2" expanded="true" />
+            <element signature="e#435519#462826#2" expanded="true" />
+            <element signature="e#462913#486524#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

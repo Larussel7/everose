@@ -134,9 +134,3 @@
 }
 
 
-input[type="submit"].loading_img {
-    background-image: url('/assets/ajax-loader.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-}
