@@ -40,6 +40,6 @@ $(".gate-location-selector-item").click(function(e) {
 
 
 // Adding loading gif to button
-// $("#add-submit").click(function() {
-//     $('#add-submit').addClass( "loading_img" );
-// });
+ $("#add-submit").click(function() {
+     $('#add-submit').addClass( "loading_img" );
+ });

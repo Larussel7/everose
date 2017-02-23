@@ -1311,7 +1311,7 @@
                     &nbsp;
                   </td>
                   <td class="table_full_right_col">
-                    Кв/Офис <%= @order.delivery.address_apartment %>
+                    Кв. <%= @order.delivery.address_apartment %>
                   </td>
                 </tr>
                 <tr height="10">
@@ -1329,18 +1329,20 @@
                 </tr>
                 <tr class="checkout_row" style="border-bottom:1px solid #eeeeee">
                   <td style="width:56px;" class="table_left_col">
-                    Date
+                    Дата
                   </td>
                   <td class="table_full_right_col", id="date_inserted">
-                    Wednesday, February 22nd
+                    Пятница, 24 февр.
                   </td>
                 </tr>
                 <tr class="checkout_row">
                   <td class="table_left_col">
-                    Time
+                    Время
                   </td>
-                  <td class="table_full_right_col">
-                    2pm - 3pm
+                  <td class="table_full_right_col", id="time_inserted">
+
+                  11 - 12
+
                   </td>
                 </tr>
                 <tr height="10">
@@ -1369,7 +1371,7 @@
                     <%= item.product.rus_title %>
                   </td>
                   <td class="table_product_price">
-                    <%= item.product.price %>
+                    <%= item.product.price %>р.
                   </td>
 
                 </tr>
