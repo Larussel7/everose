@@ -1,6 +1,7 @@
 class WhensController < ApplicationController
 
   def new
+    @order = Order.find(params[:order_id])
     @dates = (Date.today..26.days.from_now).map{ |date| date}
     @when = When.new
     render('when')

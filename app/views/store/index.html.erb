@@ -39,43 +39,24 @@
                     <hr class="loc_hr" id="mob_out"> </div>
                 </div>
                 <div class="mob_out-box">
-                  <h4 class="arrow-text" style="margin-top:10px;"> or choose from some of our most popular areas </h4>
+                  <h4 class="arrow-text" style="margin-top:10px;"> Или выберите один из городов </h4>
                   <div class="container modal-wrap-container">
                     <div class="row modal-wrap-row" style="margin-bottom:10px;">
-                      <form action="https://#/cart/search_address" method="post" accept-charset="utf-8" class="contact_form auto-submit" id="footer-buttons">
+
+
+
+                        <%= form_tag(store_index_path, method: "get", class: "contact_form auto-submit") do %>
                         <ul class="location_picker">
                           <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="94107">San Francisco</button>
-                          </li>
-                          <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="94301">Palo Alto</button>
-                          </li>
-                        </ul>
-                        <ul class="location_picker">
-                          <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="90071">Los Angeles</button>
-                          </li>
-                          <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="90401">Santa Monica</button>
+
+
+                            <%= button_tag "Челябинск", { class: "loc_picker_button"} %>
+
+
                           </li>
                         </ul>
-                        <ul class="location_picker">
-                          <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="95113">San Jose</button>
-                          </li>
-                          <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="95014">Cupertino</button>
-                          </li>
-                        </ul>
-                        <ul class="location_picker">
-                          <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="94607">Oakland</button>
-                          </li>
-                          <li>
-                            <button type="submit" class="loc_picker_button" name="address" value="94720">Berkeley</button>
-                          </li>
-                        </ul>
-                      </form>
+                        <% end %>
+
                     </div>
                   </div>
                 </div>
@@ -121,7 +102,7 @@
                 <div>
                   <hr class="header-line"><b>популярные</b>
                 </div>
-                <!-- react-text: 8 -->A few of our fave MUST-HAVES. Get ‘em while they’re hot!
+                <!-- react-text: 8 -->Самые популярные букеты!
                 <!-- /react-text -->
               </header>
               <div>
@@ -130,8 +111,6 @@
                 <% cache ['store', Product.latest] do %>
                     <% @products.each do |product| %>
                         <% cache ['entry', product] do %>
-
-
 
 
                             <div class="product">

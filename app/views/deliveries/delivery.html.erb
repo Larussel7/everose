@@ -1,38 +1,5 @@
+<%= render("orders/header") %>
 
-<div class="these-are-not-the-divs-youre-looking-for">
-  <div id="fixed-header" class="container content header">
-    <div class="checkout-nav-container">
-      <div class="checkout-nav-links">
-        <ul class="master_footer check-menu">
-          <li>
-            <a class="checkout-active" href="/checkout/delivery" title="Delivery">Доставка</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)" class="link-disabled" title="Date &#43; Time" style="cursor:default;">Дата &#43; Время</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)" class="link-disabled" title="Extras" style="cursor:default;">Экстра</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)" class="link-disabled" title="Note" style="cursor:default;">Записка</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)" class="link-disabled" title="Payment" style="cursor:default;">Платеж</a>
-          </li>
-        </ul>
-      </div>
-      <div class="checkout-nav-logo">
-
-        <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
-      </div>
-    </div>
-  </div>
-  <div style="display:none;" itemprop="brand" itemscope="" itemtype="http://schema.org/Organization">
-    <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="email">info@bloomthat.com</span> <span style="display:none;" itemprop="foundingLocation">San Francisco, CA</span>
-    <div itemprop="brand" itemscope="" itemtype="http://schema.org/Brand">
-      <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="logo">https://fdn.bloomthat.com/icons/2014/11/apple-touch-icon-precomposed.png</span>
-    </div>
-  </div>
   <div id="fixed-body">
     <div class="checkout-section" id="delivery-view">
       <div class="container content">

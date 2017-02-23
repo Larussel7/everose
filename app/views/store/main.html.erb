@@ -41,7 +41,7 @@
           <div class="hero-address-gate">
             <div class="gate-form-holder">
 
-              <%= form_tag(store_path(1), method: "get") do %>
+              <%= form_tag(store_index_path, method: "get") do %>
                   <input type="hidden" name="return_uri" value="">
                   <div class="hero-input-box">
                     <input maxlength="60" id="input_city" class="bloom-input-100 monster-lite-form" type="text" placeholder="Введите ваш адрес" name="address" value="" id="home-page-gate-address" required="" autocomplete="off">
@@ -117,7 +117,7 @@
 
         </div>
       </div>
-      <%= link_to 'Все букеты', {:controller => :store, :action => :index}, {class: "button hero-shop-button", id: "shop-full"} %>
+
     </div>
     <div class="hide-tab">
       <hr> </div>
