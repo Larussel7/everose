@@ -1,5 +1,7 @@
 class WhensController < ApplicationController
 
+  before_action :set_dates, only: [:new]
+
   def new
     @timeRanges = [ "10 - 11", "11 - 12", "12 - 13", "13 - 14", "14 - 15", "15 - 16", "16 - 17" ]
     @order = Order.find(params[:order_id])
@@ -25,6 +27,9 @@ class WhensController < ApplicationController
     params.require(:when).permit(:date, :time)
   end
 
+  def set_dates
+    @dates = (Date.today..27.days.from_now).map{ |date| date}
+  end
 
 
 end

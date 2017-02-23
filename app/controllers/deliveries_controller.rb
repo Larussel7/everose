@@ -2,6 +2,7 @@ class DeliveriesController < ApplicationController
 
   include CurrentCart
   before_action :set_cart, only: [:new, :create]
+  before_action :set_dates, only: [:new]
 
   def new
     if @cart.line_items.empty?
@@ -32,6 +33,10 @@ class DeliveriesController < ApplicationController
 
   def set_order
     @order = Order.find(params[:id])
+  end
+
+  def set_dates
+    @dates = (Date.today..27.days.from_now).map{ |date| date}
   end
 
 end

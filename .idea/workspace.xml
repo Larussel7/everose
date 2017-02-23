@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="249bf546-2d12-4c60-902c-7b7efb762733" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/main.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deliveries_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/deliveries_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/store_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/store_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/whens_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/whens_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deliveries/delivery.html.erb" afterPath="$PROJECT_DIR$/app/views/deliveries/delivery.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notes/note.html.erb" afterPath="$PROJECT_DIR$/app/views/notes/note.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/payments/payment.html.erb" afterPath="$PROJECT_DIR$/app/views/payments/payment.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/store/main.html.erb" afterPath="$PROJECT_DIR$/app/views/store/main.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/whens/when.html.erb" afterPath="$PROJECT_DIR$/app/views/whens/when.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -82,46 +90,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="everose_development.public.orders" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/447759bd/0a93e677-1257-480a-869f-ed587b5390cf/everose_development.public.orders">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="when.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/whens/when.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="1381" column="23" lean-forward="true" selection-start-line="1375" selection-start-column="18" selection-end-line="1381" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deliveries_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/deliveries_controller.rb">
+      <file leaf-file-name="note.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/notes/note.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="42" />
+            <state relative-caret-position="705">
+              <caret line="264" column="22" lean-forward="false" selection-start-line="264" selection-start-column="22" selection-end-line="264" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orders_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
+      <file leaf-file-name="payment.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/payments/payment.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+            <state relative-caret-position="300">
+              <caret line="174" column="21" lean-forward="true" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="delivery.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/deliveries/delivery.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="23" />
+            <state relative-caret-position="-2880">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_line_item.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -131,10 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>container main content</find>
-      <find>rapid-send</find>
-      <find>recommended</find>
-      <find>добавить</find>
       <find>section product_section</find>
       <find>submit-to-me</find>
       <find>ajax_throbber</find>
@@ -161,6 +170,10 @@
       <find>price</find>
       <find>Кв</find>
       <find>flas</find>
+      <find>К</find>
+      <find>Дата</find>
+      <find>ДАТА</find>
+      <find>table_product_name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +192,6 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js.cookie.js" />
-        <option value="$PROJECT_DIR$/app/controllers/store_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/store/header_index_buket.html.erb" />
         <option value="$PROJECT_DIR$/app/views/store/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/store/Nbuket.html.erb" />
@@ -191,35 +203,36 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/carts/_line_item.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/main.js" />
         <option value="$PROJECT_DIR$/app/views/extras/extra.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/carts/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/deliveries/delivery.html.erb" />
         <option value="$PROJECT_DIR$/app/views/orders/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/models/when.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/deliveries_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/whens_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170221005700_create_notes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/notes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/payments_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/payments.scss" />
         <option value="$PROJECT_DIR$/app/views/store/_header_main.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
-        <option value="$PROJECT_DIR$/app/views/store/main.html.erb" />
         <option value="$PROJECT_DIR$/app/views/store/_header_index_buket.html.erb" />
         <option value="$PROJECT_DIR$/app/views/orders/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/whens.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/store.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/deliveries.js" />
         <option value="$PROJECT_DIR$/app/views/line_items/_line_item.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/notes/note.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/payments/payment.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/whens/when.html.erb" />
         <option value="$PROJECT_DIR$/app/views/store/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/orders_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/store_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/store/main.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/whens_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/deliveries_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/deliveries/delivery.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/app/views/whens/when.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/notes/note.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/payments/payment.html.erb" />
       </list>
     </option>
   </component>
@@ -282,7 +295,99 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="payments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deliveries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,6 +420,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -555,7 +678,7 @@
       <workItem from="1487805894638" duration="13817000" />
       <workItem from="1487823766736" duration="88000" />
       <workItem from="1487824358108" duration="1313000" />
-      <workItem from="1487825871705" duration="561000" />
+      <workItem from="1487825871705" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -830,11 +953,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487825950007</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fixes">
+      <created>1487864819951</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1487864819951</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104089000" />
+    <option name="totallyTimeSpent" value="106716000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -898,13 +1028,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/carts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="89" lean-forward="false" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="853">
@@ -1041,13 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/whens_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/extras_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1059,13 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deliveries/delivery.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="142" column="125" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -1122,6 +1231,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="883">
           <caret line="19076" column="0" lean-forward="true" selection-start-line="19076" selection-start-column="0" selection-end-line="19076" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1160,47 +1270,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="81" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/payments/payment.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="128" column="23" lean-forward="false" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/store/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/notes/note.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1218,26 +1291,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/store/main.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6360">
-          <caret line="424" column="1" lean-forward="false" selection-start-line="424" selection-start-column="1" selection-end-line="424" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/whens/when.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="1313" column="23" lean-forward="false" selection-start-line="1313" selection-start-column="23" selection-end-line="1313" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/deliveries_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="570">
+          <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1255,10 +1312,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        <state relative-caret-position="307">
+          <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/store_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="82" column="38" lean-forward="false" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/whens_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/store/main.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="213" column="113" lean-forward="true" selection-start-line="213" selection-start-column="73" selection-end-line="213" selection-end-column="113" />
+          <folding>
+            <element signature="e#13247#13253#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/deliveries_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deliveries/delivery.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2880">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/line_items/_line_item.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/whens/when.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="1381" column="23" lean-forward="true" selection-start-line="1375" selection-start-column="18" selection-end-line="1381" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/notes/note.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="264" column="22" lean-forward="false" selection-start-line="264" selection-start-column="22" selection-end-line="264" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/payments/payment.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="174" column="21" lean-forward="true" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
           <folding />
         </state>
       </provider>

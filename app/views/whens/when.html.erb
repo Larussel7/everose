@@ -1,6 +1,12 @@
 <div class="these-are-not-the-divs-youre-looking-for">
 <%= render("orders/header") %>
 
+  <% if cookies[:date].blank? %>
+      <% cookieText = Russian::strftime(@dates.first, '%A') + ', ' %>
+      <% cookieText += Russian::strftime(@dates.first, '%d %b') %>
+      <% cookies[:date] = cookieText %>
+  <% end %>
+
   <div id="fixed-body">
     <div id="when-view" class="checkout-section">
       <div class="container content">
@@ -1332,7 +1338,7 @@
                     Дата
                   </td>
                   <td class="table_full_right_col", id="date_inserted">
-                    Пятница, 24 февр.
+                    <%= cookies[:date] %>
                   </td>
                 </tr>
                 <tr class="checkout_row">
@@ -1368,6 +1374,10 @@
                     <%= image_tag(item.product.image_url_cart_small, :class => "table_icon") %>
                     </td>
                   <td class="table_product_name">
+                    <% if item.quantity > 1 %>
+                        <%= item.quantity %>&times;
+                    <% else %>
+                      <% end %>
                     <%= item.product.rus_title %>
                   </td>
                   <td class="table_product_price">

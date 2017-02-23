@@ -1,5 +1,11 @@
 <%= render("orders/header") %>
 
+<% if cookies[:date].blank? %>
+    <% cookieText = Russian::strftime(@dates.first, '%A') + ', ' %>
+    <% cookieText += Russian::strftime(@dates.first, '%d %b') %>
+    <% cookies[:date] = cookieText %>
+<% end %>
+
   <div id="fixed-body">
     <div class="checkout-section" id="delivery-view">
       <div class="container content">

@@ -80,8 +80,9 @@ $("#location-search-submit").click(function() {
 $(".dtbox").click(function() {
     var text = $("h4", this).text();
     var text2 = $("h3", this).text();
-    Cookies.set('date', text2);
-    console.log(text);
+    var textDate = text2 + ", " + text;
+    Cookies.set('date', textDate);
+    console.log(textDate);
     $("#delivery-select-time .sub-four").text(text);
     $(".delivery-time-section").slideUp();
 });
@@ -93,14 +94,3 @@ $("#keep-on-bloomin").click(function() {
     window.location.href = "/store";
 });
 
-// ajax for checkout test
-/*$(function (){
-    $.ajax({
-        type: 'GET',
-        url: '/line_items/5.json',
-        success: function(data) {
-            console.log('success', data);
-        }
-    });
-});
-*/

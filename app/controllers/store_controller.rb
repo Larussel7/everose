@@ -28,9 +28,6 @@ class StoreController < ApplicationController
     end
   end
 
-  def update
-  end
-
   def set_dates
     @dates = (Date.today..27.days.from_now).map{ |date| date}
   end

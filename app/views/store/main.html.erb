@@ -211,7 +211,7 @@
                       <div class="icon-block"> <i class="fa fa-clock-o" id="clock-hov"></i> </div>
                       <div class="info-display-block">
                         <h4 class="pick_header lfte"> Когда </h4>
-                        <h4 class="sub-four lfte"> <strong>Сегодня</strong> &nbsp;<i class="fa fa-chevron-down"></i> </h4> </div>
+                        <h4 class="sub-four lfte"> <strong>Сегодня - <%= Russian::strftime(@dates.first, '%d %b') %></strong> &nbsp;<i class="fa fa-chevron-down"></i> </h4> </div>
                     </div>
                     <div class="delivery-location-section" style="display:none;">
                       <h4 class="arrow-text"> Введите город </h4>
@@ -285,15 +285,8 @@
 
                                 <% @dates.each do |date| %>
                                     <li class="dtbox dt_date">
-                                    <h3 class="pick_top">
-                                      <% if date == Date.today %>
-                                          <%= 'Сегодня' %>
-                                      <% else %>
-                                          <%= Russian::strftime(date, '%A') %>
-                                      <% end %>
-                                    </h3>
+                                    <h3 class="pick_top"><%= Russian::strftime(date, '%A') %></h3>
                                     <h4 class="pick_header"><%= Russian::strftime(date, '%d %b') %></h4>
-
                                 <% end %>
 
                               </ul>
@@ -353,15 +346,6 @@
                           </div>
                       <% end %>
 
-
-
-
-
-
-
-
-
-
                     </div>
                   </section>
                   <section>
@@ -373,8 +357,6 @@
                       <!-- /react-text -->
                     </header>
                     <div>
-
-
 
                       <% @products.each do |product| %>
 
@@ -404,14 +386,8 @@
                           </div>
                       <% end %>
 
-
-
-
                     </div>
                   </section>
-
-
-
 
                 </div>
               </div>

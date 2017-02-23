@@ -1,5 +1,7 @@
 <div class="these-are-not-the-divs-youre-looking-for">
 <%= render("orders/header") %>
+  <% cookies.delete :date %>
+  <% cookies.delete :time %>
 
   <div id="fixed-body">
     <div class="checkout-section" id="payment-view">
@@ -180,9 +182,13 @@
                       <td class="table_product_img">
                         <%= image_tag(item.product.image_url_cart_small, :class => "table_icon") %>
                       </td>
-                      <td class="table_product_name">
-                        <%= item.product.rus_title %>
-                      </td>
+                  <td class="table_product_name">
+                    <% if item.quantity > 1 %>
+                        <%= item.quantity %>&times;
+                    <% else %>
+                      <% end %>
+                    <%= item.product.rus_title %>
+                  </td>
                       <td class="table_product_price">
                         <%= item.product.price %>р.
                       </td>
