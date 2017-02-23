@@ -1,35 +1,10 @@
-<% content_for :title, "Доставка цветов - OtpravBuket" %>
-
-
-
-
-
+<% content_for :title, 'Доставка цветов - OtpravBuket' %>
 
 <div class="these-are-not-the-divs-youre-looking-for">
-  <div id="fixed-header" class="container content header">
-    <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
-      <ul class="bt-notification-list">
-        <li id="link-coupon-message"></li>
-      </ul>
-    </div>
-    <div class="container" id="header-contain">
-      <div class="four columns logo">
-        <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
-      </div>
-      <div class="eight columns header-col menu-col" id="desktop-header-menu">
-        <ul class="master_footer lead-menu">
 
-          <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
+  <%= render('header_main') %>
 
-          <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
-          <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
-          <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://#/login">Войти</a> </li>
-        </ul>
-      </div>
-      <div id="desktop-header-gate"></div>
-    </div>
-  </div>
-  <div style="display:none;" itemprop="brand" itemscope="" itemtype="http://schema.org/Organization"> <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="email">info@bloomthat.com</span> <span style="display:none;" itemprop="foundingLocation">San Francisco, CA</span>
+  <div style="display:none;" itemscope="" itemtype="http://schema.org/Organization"> <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="email">info@bloomthat.com</span> <span style="display:none;" itemprop="foundingLocation">San Francisco, CA</span>
     <div itemprop="brand" itemscope="" itemtype="http://schema.org/Brand"> <span style="display:none;" itemprop="name">BloomThat</span> <span style="display:none;" itemprop="logo">https://fdn.bloomthat.com/icons/2014/11/apple-touch-icon-precomposed.png</span> </div>
   </div>
   <div id="fixed-body">
@@ -41,7 +16,7 @@
           <div class="hero-address-gate">
             <div class="gate-form-holder">
 
-              <%= form_tag(store_index_path, method: "get") do %>
+              <%= form_tag(store_index_path, method: 'get') do %>
                   <input type="hidden" name="return_uri" value="">
                   <div class="hero-input-box">
                     <input maxlength="60" id="input_city" class="bloom-input-100 monster-lite-form" type="text" placeholder="Введите ваш адрес" name="address" value="" id="home-page-gate-address" required="" autocomplete="off">
@@ -51,7 +26,7 @@
                   <div class="hero-button-box">
 
 
-                    <%= button_to "", { class: "hero-shop-button mp-gate_city_search_attempted", id: "home-page-gate-address-submit", style: "background-color:#ff6600"} do %>
+                    <%= button_to '', {class: 'hero-shop-button mp-gate_city_search_attempted', id: 'home-page-gate-address-submit', style: 'background-color:#ff6600'} do %>
                         <span>ПОКАЖИ МНЕ БУКЕТЫ!</span>
                     <% end %>
 
@@ -66,27 +41,19 @@
       </div>
     </div>
 
-
-
-
-
-
     <div class="sixteen columns hide-tab">
 
       <div id="collection-grid" class="slider">
 
         <div data-reactroot="" id="products" class="slick-initialized slick-slider">
 
-
           <div class="your-class">
             <% cache ['store', Product.latest] do %>
                 <% @products.each do |product| %>
                     <% cache ['entry', product] do %>
 
-
-
                         <div class="product slick-slide slick-active" data-slick-index=<%= product.id %> aria-hidden="false" style="width: 375px;">
-                          <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
+                          <%= link_to image_tag(product.image_url), buket_store_path(product), :class => 'collecton-grid-image' %>
                           <div class="product-info">
                             <div class="info-top">
                               <div class="title">
@@ -94,7 +61,7 @@
                               </div>
                             </div>
                             <div class="info-bottom">
-                              <%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
+                              <%= link_to 'ОТПРАВЬ', buket_store_path(product), :class => 'synth-product_link button' %>
                             </div>
 
 
@@ -220,7 +187,7 @@
             <h2 class="sect-title" style="text-align:center;"> Доставляем свежие букеты в этих регионах </h2>
             <ul class="ter-master">
 
-              <li class="city"> <%= link_to 'Челябинск', {:controller => :store, :action => :index}, {id: "city-eastbay"} %></li>
+              <li class="city"> <%= link_to 'Челябинск', {:controller => :store, :action => :index}, {id: 'city-eastbay'} %></li>
             </ul>
           </div>
         </div>
@@ -317,16 +284,16 @@
                               <ul class="dtpicker">
 
                                 <% @dates.each do |date| %>
-                                    <li class="dtbox dt_date"">
+                                    <li class="dtbox dt_date">
                                     <h3 class="pick_top">
                                       <% if date == Date.today %>
-                                          <%= "Сегодня" %>
+                                          <%= 'Сегодня' %>
                                       <% else %>
-                                          <%= Russian::strftime(date, "%A") %>
+                                          <%= Russian::strftime(date, '%A') %>
                                       <% end %>
                                     </h3>
-                                    <h4 class="pick_header"><%= Russian::strftime(date, "%d %b") %></h4>
-                                    </li>
+                                    <h4 class="pick_header"><%= Russian::strftime(date, '%d %b') %></h4>
+
                                 <% end %>
 
                               </ul>
@@ -363,7 +330,7 @@
 
                           <div class="product">
 
-                            <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
+                            <%= link_to image_tag(product.image_url), buket_store_path(product), :class => 'collecton-grid-image' %>
 
 
                             <div class="product-info">
@@ -372,7 +339,7 @@
                                 </div>
                                 <p class="when-deliv">available Tomorrow, 11AM-1PM</p>
                               </div>
-                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
+                              <div class="info-bottom"><%= link_to 'ОТПРАВЬ', buket_store_path(product), :class => 'synth-product_link button' %>
                               </div>
                             </div>
                             <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
@@ -414,7 +381,7 @@
 
                           <div class="product">
 
-                            <%= link_to image_tag(product.image_url), buket_store_path(product), :class => "collecton-grid-image" %>
+                            <%= link_to image_tag(product.image_url), buket_store_path(product), :class => 'collecton-grid-image' %>
 
 
                             <div class="product-info">
@@ -423,7 +390,7 @@
                                 </div>
                                 <p class="when-deliv">available Tomorrow, 11AM-1PM</p>
                               </div>
-                              <div class="info-bottom"><%= link_to "ОТПРАВЬ", buket_store_path(product), :class => "synth-product_link button" %>
+                              <div class="info-bottom"><%= link_to 'ОТПРАВЬ', buket_store_path(product), :class => 'synth-product_link button' %>
                               </div>
                             </div>
                             <div itemscope="" itemtype="http://schema.org/Product" style="display: none;">
@@ -582,7 +549,7 @@
         <div class="row modal-wrap-row">
           <ul class="location_picker">
             <li>
-              <button type="button" class="logout_btn" name="Close" id="not-there-close" onclick="window.location.href=&#39;/login/sign-up&#39;;">SIGN UP!</button>
+              <button type="button" class="logout_btn" name="Close" id="not-there-close" onclick="">SIGN UP!</button>
             </li>
           </ul>
         </div>
@@ -608,8 +575,10 @@
                 <div class="pac-container pac-logo" style="width: 398px; position: absolute; display:none;" id="footer-zip-request-results"></div>
               </div>
               <div class="hero-button-box">
+
                 <button type="submit" class="hero-shop-button mp-gate_city_search_attempted" data-mp_button_text="Shop" data-mp_ui_element="hero-address-gate" id="footer-zip-request-submit" data-input_id="footer-zip-request" style="background-color:#ff6600"><span>SHOW ME THE BLOOMS!</span>
                 </button>
+
               </div>
             </form>
           </div>

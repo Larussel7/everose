@@ -1,0 +1,21 @@
+<div id="fixed-header" class="container content header">
+  <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
+    <ul class="bt-notification-list">
+      <li id="link-coupon-message"></li>
+    </ul>
+  </div>
+  <div class="container" id="header-contain">
+    <div class="four columns logo">
+      <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
+    </div>
+    <div class="eight columns header-col menu-col" id="desktop-header-menu">
+      <ul class="master_footer lead-menu">
+        <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
+        <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
+        <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
+        <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://#/login">Войти</a> </li>
+      </ul>
+    </div>
+    <div id="desktop-header-gate"></div>
+  </div>
+</div>

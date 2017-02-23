@@ -1,5 +1,6 @@
+<% ses1 = session[:cart_id] %>
 
-<div class="these-are-not-the-divs-youre-looking-for">
+
   <div id="fixed-header" class="container content header">
     <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
       <ul class="bt-notification-list">
@@ -18,10 +19,12 @@
           <li class="swap-to-footer" id="blooms-link"> <%= link_to 'Букеты', :controller => :store, :action => :index %> </li>
           <li class="swap-to-footer" id="how_li"> <%= link_to('Наша история', {:action => 'index'}) %> </li>
           <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
+          <li class="swap-to-footer" id="cart-link_img"> <%= link_to image_tag("cart.png", :alt => 'Корзина', :title => 'Everose', :class => 'cart_from_top_menu'), @path  %> </li>
 
 
-          <% ses1 = session[:cart_id] %>
-          <li class="sign-in-button"> <%= link_to 'Кор', @path, :class => 'cart' %> </li>
+
+
+
 
           <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://www.#.com/login">Войти</a> </li>
         </ul>

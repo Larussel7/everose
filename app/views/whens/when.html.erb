@@ -1,3 +1,4 @@
+<div class="these-are-not-the-divs-youre-looking-for">
 <%= render("orders/header") %>
 
   <div id="fixed-body">
@@ -1356,10 +1357,10 @@
                   <td></td>
                 </tr>
 
-
+                <% @order.line_items.each do |item| %>
                 <tr class="table_product_row">
 
-                  <% @order.line_items.each do |item| %>
+
 
                   <td class="table_product_img">
                     <%= image_tag(item.product.image_url_cart_small, :class => "table_icon") %>
@@ -1370,9 +1371,9 @@
                   <td class="table_product_price">
                     <%= item.product.price %>
                   </td>
-                      <% end %>
-                </tr>
 
+                </tr>
+                  <% end %>
 
                 <tr>
                   <td class="table_left_col">
