@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
 
   resources :orders do
-    resources :whens, only: [:new, :create]
+    resources :whens, only: [:new, :create, :show, :update]
     resources :extras, only: [:new, :create]
     resources :notes, only: [:new, :create]
     resources :payments, only: [:new, :create]

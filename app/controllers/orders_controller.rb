@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
 
   include CurrentCart
   before_action :set_cart, only: [:new, :create]
-  before_action :set_order, only: [:show, :edit, :update, :destroy, :when, :when_update]
+
 
   def new
     if @cart.line_items.empty?
@@ -16,7 +16,6 @@ class OrdersController < ApplicationController
 
   def create
     @delivery = Order.new(order_params)
-    @delivery.add_line_items_from_cart(@cart)
     if @order.save
       redirect_to(when_order_path(@order))
     else

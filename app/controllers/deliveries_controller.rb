@@ -17,6 +17,7 @@ class DeliveriesController < ApplicationController
     @delivery = Delivery.new(delivery_params)
     @order = Order.create()
     @order.delivery = @delivery
+    @order.add_line_items_from_cart(@cart)
     if @delivery.save
       redirect_to(new_order_when_path(@order))
     else
