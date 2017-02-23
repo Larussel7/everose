@@ -14,7 +14,7 @@ class WhensController < ApplicationController
     @order.when = @when
 
     if @when.save
-      redirect_to(new_order_extra_path(@order))
+      redirect_to(new_order_note_path(@order))
     else
       render("when")
     end

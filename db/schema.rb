@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20170221012022) do
     t.string   "note_from"
     t.string   "note_to"
     t.text     "note"
-    t.string   "special_instruction"
+    t.text     "special_instruction"
     t.integer  "order_id"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false

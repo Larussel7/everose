@@ -14,24 +14,28 @@
           </div>
           <div class="ten columns">
             <hr>
-            <form action="https://www.bloomthat.com/checkout/note_save" method="post" accept-charset="utf-8" class="bloom-form" id="bloom-checkout-note">
+
+
+              <%= form_for @note, :url => url_for(:controller => 'notes', :action => 'create') do |f| %>
+
+
               <div class="row row-header">
                 <div class="five columns alpha">
                   <h2 class="checkout-subheader">
-                    Write a Note
+                    Написать записку
                   </h2>
                 </div>
                 <div class="five columns omega">
                   <h2 class="checkout_info">
-                    Leave blank and we won't write a thing!
+                    Отставьте пустым и мы ничего не напишем!
                   </h2>
                 </div>
               </div>
               <div class="row">
                 <div>
-                  <label for="send_reason">Why Are You Sending?</label> <select name="send_reason" id="send-reason">
+                  <label for="send_reason">Причина отправки?</label> <select name="send_reason" id="send-reason">
                   <option value="" selected="selected">
-                    Select Occasion (Optional)
+                    Есть идеи!!
                   </option>
                   <option value="anniversary">
                     Anniversary
@@ -83,21 +87,30 @@
               </div>
               <div class="row">
                 <div class="five columns alpha wrap-magic">
-                  <label class="label-magic" for="note_to">To</label> <input maxlength="80" class="bloom-input-100 note-input-field" name="note_to" type="text" placeholder="To" id="note_to" value="Fd">
+                  <label class="label-magic" for="note_to">To</label>
+
+                  <%= f.text_field :note_to, :class => "bloom-input-100 note-input-field", :id => "note_to", :placeholder => "Кому"%>
+
                 </div>
                 <div class="five columns omega wrap-magic">
-                  <label class="label-magic" for="note_from">From</label> <input maxlength="80" class="bloom-input-100 note-input-field" name="note_from" type="text" id="note_from" placeholder="From" value="Anton">
+                  <label class="label-magic" for="note_from">From</label>
+
+                  <%= f.text_field :note_from, :class => "bloom-input-100 note-input-field", :id => "note_from", :placeholder => "От кого"%>
+
                 </div>
               </div>
               <div class="row">
                 <div class="ten columns wrap-magic">
                   <div id="note-wrapper">
                     <label class="label-magic" for="note_content">Note (<span id="note_content-count">0</span>/120)</label>
-                    <textarea class="bloom-input-100 note-input-field" name="note_content" type="text" id="note_content" placeholder="Note (120 char.)" maxlength="120">
-Ddhb
-</textarea> <i id='ex' class="fa fa-times fa-2" aria-hidden="true"></i>
+
+                    <%= f.text_area :note, :class => "bloom-input-100 note-input-field", :id => "note_content", :placeholder => "120 символов.", :maxlength => "120" %>
+
+
+
+                    <i id='ex' class="fa fa-times fa-2" aria-hidden="true"></i>
                     <div id="rando-note-wrapper">
-                      Words are hard&hellip; let us help you with a few ideas <button class="logout_btn" id="rando-note">Click here</button>
+                      Позвольте нам помочь с запиской! <button class="logout_btn" id="rando-note">Кликни тут</button>
                     </div>
                   </div>
                 </div>
@@ -123,23 +136,35 @@ Ddhb
               <div class="row row-header">
                 <div class="ten columns alpha">
                   <h2 class="checkout-subheader" style="">
-                    Special Delivery Instructions
+                    Инструкции для доставки
                   </h2>
                 </div>
               </div>
               <div class="row">
                 <div class="ten columns wrap-magic">
-                  <label class="label-magic" for="instructions">Special Delivery Instructions</label>
-                  <textarea maxlength="255" class="bloom-input-100 note-input-field" name="instructions" id="instructions" type="text" placeholder="Got a door code for the delivery person? Hard to find building? Tell us here.">
-</textarea>
+                  <label class="label-magic" for="instructions">Инструкции для доставки</label>
+
+                  <%= f.text_area :special_instruction, :class => "bloom-input-100 note-input-field", :id => "instructions", :placeholder => "Есть код для входа? Сложно найти здание, помогите нам найти.", :maxlength => "255" %>
+
                 </div>
               </div>
               <div class="row">
+
                 <div id="next-alone" class="five columns omega wrap-magic">
-                  <button type="submit" class="slinky mp-fill_out_note_attempted" data-mp_button_text="Next" id="synth-next_step"><span>Next</span> <span class="button-throbber"><img class="ajax_throbber" src="https://fdn.bloomthat.com/icons/home/button-loading-orange.gif"></span></button>
+                  <%= f.submit "Далее", :id => "submit-to-me" %>
                 </div>
+
               </div>
-            </form>
+
+
+
+
+              <% end %>
+
+
+
+
+
           </div>
         </div>
         <div class="six columns">
@@ -152,26 +177,26 @@ Ddhb
                 </tr>
                 <tr class="checkout_row">
                   <td class="table_left_col">
-                    To
+                    Кому
                   </td>
                   <td class="table_full_right_col">
-                    Fd Gs
+                    <%= @order.delivery.first_name %>
                   </td>
                 </tr>
                 <tr class="checkout_row">
                   <td class="table_left_col">
-                    Phone
+                    Телефон
                   </td>
                   <td class="table_full_right_col">
-                    (412) 547-5412
+                    <%= @order.delivery.phone_number %>
                   </td>
                 </tr>
                 <tr class="checkout_row">
                   <td class="table_left_col">
-                    Address
+                    Адрес
                   </td>
                   <td class="table_full_right_col">
-                    124 1st Ave (3)
+                    <%= @order.delivery.address %>
                   </td>
                 </tr>
                 <tr class="checkout_row">
@@ -179,7 +204,7 @@ Ddhb
                     &nbsp;
                   </td>
                   <td class="table_full_right_col">
-                    New York, 10009
+                    Кв/Офис <%= @order.delivery.address_apartment %>
                   </td>
                 </tr>
                 <tr height="10">
@@ -197,18 +222,18 @@ Ddhb
                 </tr>
                 <tr class="checkout_row" style="border-bottom:1px solid #eeeeee">
                   <td style="width:56px;" class="table_left_col">
-                    Date
+                    Дата
                   </td>
                   <td class="table_full_right_col">
-                    Wednesday, February 22nd
+                    <%= @order.when.date %>
                   </td>
                 </tr>
                 <tr class="checkout_row">
                   <td class="table_left_col">
-                    Time
+                    Время
                   </td>
                   <td class="table_full_right_col">
-                    2pm - 3pm
+                    <%= @order.when.time %>
                   </td>
                 </tr>
                 <tr height="10">
@@ -225,15 +250,19 @@ Ddhb
                   <td></td>
                 </tr>
                 <tr class="table_product_row">
-                  <td class="table_product_img">
-                    <img class="table_icon" src="https://fdn.bloomthat.com/files/products/the-posey/icon/1486753996/the-posey-icon-bloomthat-tulip-icon.png">
-                  </td>
-                  <td class="table_product_name">
-                    The Posey
-                  </td>
-                  <td class="table_product_price">
-                    $49.00
-                  </td>
+
+                  <% @order.line_items.each do |item| %>
+
+                      <td class="table_product_img">
+                        <%= image_tag(item.product.image_url_cart_small, :class => "table_icon") %>
+                      </td>
+                      <td class="table_product_name">
+                        <%= item.product.rus_title %>
+                      </td>
+                      <td class="table_product_price">
+                        <%= item.product.price %>
+                      </td>
+                  <% end %>
                 </tr>
                 <tr style="display:none;" id="order-discount-row">
                   <td class="table_left_col">
@@ -251,23 +280,13 @@ Ddhb
                     &nbsp;
                   </td>
                   <td class="table_row_title">
-                    Delivery
+                    Доставка
                   </td>
                   <td class="table_row_result" id="order-shipping-value">
-                    $9.99
+                    0.00
                   </td>
                 </tr>
-                <tr>
-                  <td class="table_left_col">
-                    &nbsp;
-                  </td>
-                  <td class="table_row_title">
-                    Tax
-                  </td>
-                  <td class="table_row_result" id="order-tax-value">
-                    $5.23
-                  </td>
-                </tr>
+
                 <tr>
                   <td colspan="3">
                     <hr>
@@ -278,10 +297,10 @@ Ddhb
                     &nbsp;
                   </td>
                   <td height="40" valign="top" class="table_product_name">
-                    Total
+                    Итого:
                   </td>
                   <td height="40" valign="top" class="table_total_price" id="order-total-value">
-                    $64.22
+                    <%= @total %>
                   </td>
                 </tr>
               </table>
@@ -394,11 +413,8 @@ Ddhb
 </div>
 
 
-<%= form_for @note, :url => url_for(:controller => 'notes', :action => 'create') do |f| %>
 
-    <%= f.text_field :email %>
-    <%= f.submit "Далее" %>
-<% end %>
+
 
 
 <div class="arrow_box_zipper" style="display:none;" id="promo_code_enter">
@@ -457,26 +473,5 @@ Ddhb
     </div>
   </div>
 </div>
-<div class="base">
-  <div class="container">
-    <div class="sixteen columns">
-      <div class="row">
-        <img alt="BloomThat Flower Delivery" style="width:75px;" src="https://fdn.bloomthat.com/logos/2014/12/bloomthat-logo-mobile.png">
-      </div>
-      <ul class="master_footer">
-        <li>
-          <a href="/help-center" title="Help" target="_blank">Support</a>
-        </li>
-        <li>
-          <a href="/account" title="Account" target="_blank">Account</a>
-        </li>
-        <li>
-          <a href="/terms" title="Privacy Policy and Terms of Use" target="_blank">Terms</a>
-        </li>
-      </ul>
-      <p>
-        &copy; Copyright 2017 BloomThat
-      </p>
-    </div>
-  </div>
-</div>
+
+<%= render('orders/footer')%>

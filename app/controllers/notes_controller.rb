@@ -1,6 +1,11 @@
 class NotesController < ApplicationController
 
   def new
+    @order = Order.find(params[:order_id])
+    @total = 0
+    @order.line_items.each do |item|
+      @total += item.product.price * item.quantity
+    end
     @note = Note.new
     render('note')
   end

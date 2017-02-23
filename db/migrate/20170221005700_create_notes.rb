@@ -7,7 +7,7 @@ class CreateNotes < ActiveRecord::Migration[5.0]
       t.string "note_from"
       t.string "note_to"
       t.text   "note"
-      t.string "special_instruction"
+      t.text   "special_instruction"
       t.integer "order_id"
 
       t.timestamps
