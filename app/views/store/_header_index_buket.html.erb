@@ -1,5 +1,12 @@
 <% ses1 = session[:cart_id] %>
 
+<% if cookies[:date].blank? %>
+    <% cookieText = Russian::strftime(@dates.first, '%d %b') %>
+    <% textData = cookieText %>
+<% else %>
+    <% tempData = cookies[:date] %>
+    <% textData = tempData.split(/,/).last %>
+<% end %>
 
   <div id="fixed-header" class="container content header">
     <div class="bt-notifications" id="link-coupon-banner" style="display:none;">
@@ -21,11 +28,6 @@
           <li class="swap-to-footer" id="faq-link"> <%= link_to('Контакты', {:action => 'index'}) %> </li>
           <li class="swap-to-footer" id="cart-link_img"> <%= link_to image_tag("cart.png", :alt => 'Корзина', :title => 'Everose', :class => 'cart_from_top_menu'), @path  %> </li>
 
-
-
-
-
-
           <li class="sign-in-button"> <a class="logout_btn" name="Sign In" id="" href="https://www.#.com/login">Войти</a> </li>
         </ul>
       </div>
@@ -43,7 +45,13 @@
 
         <div class="two columns header-col" id="gate-location-selector-header">
 
-          <div class="gated-wrap-header" id="gate-when-wrap" style="border-color: transparent;"> <span class="header_label">Когда</span> <span class="header_result">Сегодня</span> <span class="chevron-proof gate-when-clicker"><i class="fa fa-chevron-circle-down"></i></span> </div>
+          <div class="gated-wrap-header" id="gate-when-wrap" style="border-color: transparent;"> <span class="header_label">Когда</span>
+
+
+            <span class="header_result"><%= textData %></span>
+
+
+            <span class="chevron-proof gate-when-clicker"><i class="fa fa-chevron-circle-down"></i></span> </div>
           <div class="gate-location-selector_hero-header" id="gate-location-selector-header-list">
 
             <ul class="location-selector-drop">
