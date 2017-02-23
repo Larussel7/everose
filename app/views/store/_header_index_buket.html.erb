@@ -49,14 +49,8 @@
             <ul class="location-selector-drop">
 
               <% @dates.each do |date| %>
-                  <li class="gate-location-selector-item">
-                    <% if date == Date.today %>
-                        <%= "Сегодня" %>
-                    <% else %>
-                        <%= Russian::strftime(date, "%d %b") %>
-                    <% end %>
-
-                  </li>
+                  <li class="gate-location-selector-item", value="<%= Russian::strftime(date, "%A") %>"><%= Russian::strftime(date, "%d %b") %></li>
+                  <li class="gate-location-selector-item", id="pick_top_display_none"><%= Russian::strftime(date, "%A") %></li>
               <% end %>
 
             </ul>

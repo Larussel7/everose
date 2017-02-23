@@ -32,8 +32,10 @@ $("#gate-when-wrap").click(function() {
 
 $(".gate-location-selector-item").click(function(e) {
     var text = $(e.target).text();
-    Cookies.set('date', text);
-    console.log(text);
+    var weekDay = $(e.target).attr("value");
+    var dateText = weekDay + ', ' + text;
+    Cookies.set('date', dateText);
+    console.log(dateText);
     $("#gate-when-wrap .header_result").text(text);
     $(".gate-location-selector_hero-header").slideUp();
 });
