@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
 
 
-  # TODO change root Do not forget
+  # TODO change root Do not forget to change title
   root "store#main"
 
 
