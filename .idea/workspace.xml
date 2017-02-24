@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="249bf546-2d12-4c60-902c-7b7efb762733" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/everose.iml" afterPath="$PROJECT_DIR$/.idea/everose.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/store/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/store/_footer.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -533,7 +530,7 @@
       <workItem from="1487825871705" duration="3450000" />
       <workItem from="1487870330948" duration="2817000" />
       <workItem from="1487879427646" duration="1860000" />
-      <workItem from="1487903612882" duration="2811000" />
+      <workItem from="1487903612882" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="uncomment private method">
       <created>1487367202461</created>
@@ -836,11 +833,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487881058995</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="change footer title">
+      <created>1487906616223</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1487906616223</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114466000" />
+    <option name="totallyTimeSpent" value="114711000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -897,7 +901,8 @@
     <MESSAGE value="bags fix" />
     <MESSAGE value="live:)" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="change footer title" />
+    <option name="LAST_COMMIT_MESSAGE" value="change footer title" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
