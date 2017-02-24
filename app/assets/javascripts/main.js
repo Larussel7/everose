@@ -77,7 +77,7 @@ $("#location-search-submit").click(function() {
 
 
 
-$(".dtbox").click(function() {
+$(".special_only_for_js").click(function() {
     var text = $("h4", this).text();
     var text2 = $("h3", this).text();
     var textDate = text2 + ", " + text;
