@@ -26,6 +26,7 @@ class DeliveriesController < ApplicationController
     end
   end
 
+
   private
   def delivery_params
     params.require(:delivery).permit(:first_name, :last_name, :company, :phone_number, :address, :address_apartment)

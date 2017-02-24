@@ -2,10 +2,10 @@
 
 <% if cookies[:date].blank? %>
     <% cookieText = Russian::strftime(@dates.first, '%d %b') %>
-    <% textData = cookieText %>
+    <% textDataCookies = cookieText %>
 <% else %>
     <% tempData = cookies[:date] %>
-    <% textData = tempData.split(/,/).last %>
+    <% textDataCookies = tempData.split(/,/).last %>
 <% end %>
 
   <div id="fixed-header" class="container content header">
@@ -48,7 +48,7 @@
           <div class="gated-wrap-header" id="gate-when-wrap" style="border-color: transparent;"> <span class="header_label">Когда</span>
 
 
-            <span class="header_result"><%= textData %></span>
+            <span class="header_result"><%= textDataCookies %></span>
 
 
             <span class="chevron-proof gate-when-clicker"><i class="fa fa-chevron-circle-down"></i></span> </div>

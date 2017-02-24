@@ -1,16 +1,11 @@
 Rails.application.routes.draw do
 
 
-
-
-
-
-
   # TODO change root
   root "store#main"
 
 
-  resources :deliveries, only: [:new, :create]
+  resources :deliveries, only: [:new, :create, :show, :update]
 
 
   resources :orders do

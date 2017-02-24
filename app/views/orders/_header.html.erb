@@ -1,26 +1,23 @@
-
-
-  <div id="fixed-header" class="container content header">
+ <div id="fixed-header" class="container content header">
     <div class="checkout-nav-container">
       <div class="checkout-nav-links">
         <ul class="master_footer check-menu">
           <li>
-            <a class="checkout-active" href="#" title="Delivery">Доставка</a>
+            <a class="checkout-active" href="#" title="Delivery" id="delivery_header_link">Доставка</a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="link-disabled" title="Date &#43; Time" style="cursor:default;">Дата &#43; Время</a>
+            <a href="javascript:void(0)" class="link-disabled" title="Date &#43; Time" style="cursor:default;" id="date_header_link">Дата &#43; Время</a>
           </li>
 
           <li>
-            <a href="javascript:void(0)" class="link-disabled" title="Note" style="cursor:default;">Записка</a>
+            <a href="javascript:void(0)" class="link-disabled" title="Note" style="cursor:default;" id="note_header_link">Записка</a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="link-disabled" title="Payment" style="cursor:default;">Платеж</a>
+            <a href="javascript:void(0)" class="link-disabled" title="Payment" style="cursor:default;" id="payment_header_link">Платеж</a>
           </li>
         </ul>
       </div>
       <div class="checkout-nav-logo">
-
         <%= link_to image_tag("logo.png", :alt => 'Everose', :title => 'Everose'), root_path %>
       </div>
     </div>
