@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
 
 
-  # TODO change root
+  # TODO change root Dont forget to change footer
   root "store#main"
 
 
